@@ -1,0 +1,513 @@
+[
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Designing software",
+    "type": "content",
+    "text": "Describe the benefits of developing secure software"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Designing software",
+    "type": "content",
+    "text": "Interpret and apply fundamental software development steps to develop secure code"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Designing software",
+    "type": "content",
+    "text": "Describe how the capabilities and experience of end users influence the secure design features of software"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Developing secure code",
+    "type": "content",
+    "text": "Explore fundamental software design security concepts when developing programming code"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Developing secure code",
+    "type": "content",
+    "text": "Apply security features incorporated into software including data protection, security, privacy and regulatory compliance"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Developing secure code",
+    "type": "content",
+    "text": "Use and explain the contribution of cryptography and sandboxing to the ‘security by design’ approach in the development of software solutions"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Developing secure code",
+    "type": "content",
+    "text": "Use and explain the ‘privacy by design’ approach in the development of software solutions"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Developing secure code",
+    "type": "content",
+    "text": "Test and evaluate the security and resilience of software by determining vulnerabilities, hardening systems, handling breaches, maintaining business continuity and conducting disaster recovery"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Developing secure code",
+    "type": "content",
+    "text": "Apply and evaluate strategies used by software developers to manage the security of programming code"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Developing secure code",
+    "type": "content",
+    "text": "Design, develop and implement code using defensive data input handling practices, including input validation, sanitisation and error handling"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Developing secure code",
+    "type": "content",
+    "text": "Design, develop and implement a safe application programming interface (API) to minimise software vulnerabilities"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Developing secure code",
+    "type": "content",
+    "text": "Design, develop and implement code considering efficient execution for the user"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Developing secure code",
+    "type": "content",
+    "text": "Design, develop and implement secure code to minimise vulnerabilities in user action controls"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Developing secure code",
+    "type": "content",
+    "text": "Design, develop and implement secure code to protect user file and hardware vulnerabilities from file attacks and side channel attacks"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Impact of safe and secure software development",
+    "type": "content",
+    "text": "Apply and describe the benefits of collaboration to develop safe and secure software"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Impact of safe and secure software development",
+    "type": "content",
+    "text": "Investigate and explain the benefits to an enterprise of the implementation of safe and secure development practices"
+  },
+  {
+    "year": "Y12",
+    "topic": "Secure software architecture",
+    "section": "Impact of safe and secure software development",
+    "type": "content",
+    "text": "Evaluate the social, ethical and legal issues and ramifications that affect people and enterprises resulting from the development and implementation of safe and secure software"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Data transmission using the web",
+    "type": "content",
+    "text": "Explore the applications of web programming"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Data transmission using the web",
+    "type": "content",
+    "text": "Investigate and practise how data is transferred on the internet"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Data transmission using the web",
+    "type": "content",
+    "text": "Investigate and describe the function of web protocols and their ports"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Data transmission using the web",
+    "type": "content",
+    "text": "Explain the processes for securing the web"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Data transmission using the web",
+    "type": "content",
+    "text": "Investigate the effect of big data on web architecture"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Investigate and explain the role of the World Wide Web Consortium (W3C) in the development of applications for the web"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Model elements that form a web development system"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Explore and explain the influence of a web browser on web development, including the use of developer (dev) tools"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Investigate cascading style sheets (CSS) and its impact on the design of a web application"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Investigate the reasons for version control and apply it when developing web application"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Explore the types and significance of code libraries for front-end web development"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Explain the use and development of open-source software in relation to web development"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Investigate methods to support and manage the load times of web pages/applications"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Research, experiment with and evaluate the prevalence and use of web content management systems (CMS)"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Assess the contribution of back-end web development to the success of a web application"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Observe and describe the back-end process used to manage a web request"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Develop a web application using an appropriate scripting language with shell scripts to make files and directories, and searching for text in a text file"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Apply a web-based database and construct script that executes SQL"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Compare Object-Relational Mapping (ORM) to SQL"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Describe how collaborative work practices between front-end and back-end developers improve the development of a web solution"
+  },
+  {
+    "year": "Y12",
+    "topic": "Programming for the web",
+    "section": "Designing web applications",
+    "type": "content",
+    "text": "Design, develop and implement a progressive web app (PWA)"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software automation",
+    "section": "Algorithms in machine learning",
+    "type": "content",
+    "text": "Investigate how machine learning (ML) supports automation through the use of DevOps, robotic process automation (RPA) and business process automation (BPA)"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software automation",
+    "section": "Algorithms in machine learning",
+    "type": "content",
+    "text": "Distinguish between artificial intelligence (AI) and ML"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software automation",
+    "section": "Algorithms in machine learning",
+    "type": "content",
+    "text": "Explore models of training ML"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software automation",
+    "section": "Algorithms in machine learning",
+    "type": "content",
+    "text": "Investigate common applications of key ML algorithms"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software automation",
+    "section": "Algorithms in machine learning",
+    "type": "content",
+    "text": "Research models used by software engineers to design and analyse ML"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software automation",
+    "section": "Algorithms in machine learning",
+    "type": "content",
+    "text": "Describe types of algorithms associated with ML"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software automation",
+    "section": "Programming for automation",
+    "type": "content",
+    "text": "Design, develop and apply ML regression models using an OOP to predict numeric values"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software automation",
+    "section": "Programming for automation",
+    "type": "content",
+    "text": "Apply neural network models using an OOP to make predictions"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software automation",
+    "section": "Significance and impact of ML and AI",
+    "type": "content",
+    "text": "Assess the impact of automation on the individual, society and the environment"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software automation",
+    "section": "Significance and impact of ML and AI",
+    "type": "content",
+    "text": "Explore by implementation how patterns in human behaviour influence ML and AI software development"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software automation",
+    "section": "Significance and impact of ML and AI",
+    "type": "content",
+    "text": "Investigate the effect of human and dataset source bias in the development of ML and AI solutions"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Identifying and defining",
+    "type": "content",
+    "text": "Define and analyse the requirements of a problem"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Identifying and defining",
+    "type": "content",
+    "text": "Explore tools used to develop ideas and generate solutions"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Identifying and defining",
+    "type": "content",
+    "text": "Investigate types of software implementation methods"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Research and planning",
+    "type": "content",
+    "text": "Research and use the Waterfall software development approach"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Research and planning",
+    "type": "content",
+    "text": "Research and use the Agile software development approach"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Research and planning",
+    "type": "content",
+    "text": "Research the WAgile software development approach"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Research and planning",
+    "type": "content",
+    "text": "Apply project management to plan and conduct the development and implementation of a project and software engineering solution"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Research and planning",
+    "type": "content",
+    "text": "Explore social and ethical issues associated with project work, including working individually, collaboratively and responding to stakeholders"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Research and planning",
+    "type": "content",
+    "text": "Explore communication issues associated with project work"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Research and planning",
+    "type": "content",
+    "text": "Investigate how software engineering solutions are quality assured"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Research and planning",
+    "type": "content",
+    "text": "Demonstrate the use of modelling tools"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Research and planning",
+    "type": "content",
+    "text": "Explain the contribution of back-end engineering to the success and ease of software development"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Producing and implementing",
+    "type": "content",
+    "text": "Design, construct and implement a solution to a software problem using appropriate development approach(es)"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Producing and implementing",
+    "type": "content",
+    "text": "Present a software engineering solution using presentation software"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Producing and implementing",
+    "type": "content",
+    "text": "Develop, construct and document algorithms"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Producing and implementing",
+    "type": "content",
+    "text": "Allocate resources to support the development of a software engineering solution"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Producing and implementing",
+    "type": "content",
+    "text": "Demonstrate the use of programmed data backup"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Producing and implementing",
+    "type": "content",
+    "text": "Implement version control when developing a software engineering solution"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Producing and implementing",
+    "type": "content",
+    "text": "Explore strategies to respond to difficulties when developing a software engineering solution"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Producing and implementing",
+    "type": "content",
+    "text": "Propose an additional innovative solution using a prototype and user interface (UI) design"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Testing and evaluating",
+    "type": "content",
+    "text": "Apply methodologies to test and evaluate code"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Testing and evaluating",
+    "type": "content",
+    "text": "Use a language-dependent code optimisation technique"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Testing and evaluating",
+    "type": "content",
+    "text": "Analyse and respond to feedback"
+  },
+  {
+    "year": "Y12",
+    "topic": "Software engineering project",
+    "section": "Testing and evaluating",
+    "type": "content",
+    "text": "Evaluate the effectiveness of a software engineering solution"
+  }
+]

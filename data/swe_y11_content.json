@@ -1,0 +1,359 @@
+[
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Software development",
+    "type": "content",
+    "text": "Explore fundamental software development steps used by programmers when designing software"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Software development",
+    "type": "content",
+    "text": "Research and evaluate the prevalence and use of online code collaboration tools"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "type": "content",
+    "text": "Apply computational thinking and algorithmic design by defining the key features of standard algorithms, including sequence, selection, iteration and identifying data that should be stored"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "type": "content",
+    "text": "Apply divide and conquer and backtracking as algorithmic design strategies"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "type": "content",
+    "text": "Develop structured algorithms using pseudocode and flowcharts, including the use of subprograms"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "type": "content",
+    "text": "Use modelling tools including structure charts, abstraction and refinement diagrams to support top-down and bottom-up design"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "type": "content",
+    "text": "Analyse the logic and structure of written algorithms"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "type": "content",
+    "text": "Identify procedures and functions in an algorithm"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "type": "content",
+    "text": "Experiment with object-oriented programming, imperative, logic and functional programming paradigms"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Data for software engineering",
+    "type": "content",
+    "text": "Investigate the use of number systems for computing purposes, including binary, decimal and hexadecimal"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Data for software engineering",
+    "type": "content",
+    "text": "Represent integers using two’s complement"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Data for software engineering",
+    "type": "content",
+    "text": "Investigate standard data types"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Data for software engineering",
+    "type": "content",
+    "text": "Create data dictionaries as a tool to describe data and data types, structure data, and record relationships"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Data for software engineering",
+    "type": "content",
+    "text": "Use data structures of arrays, records, trees and sequential files"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "type": "content",
+    "text": "Apply skills in computational thinking and programming to develop a software solution"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "type": "content",
+    "text": "Implement data structures that support data storage"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "type": "content",
+    "text": "Compare the execution of the Waterfall and Agile project management models as applied to software development"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "type": "content",
+    "text": "Test and evaluate solutions, considering key aspects including functionality, performance, readability of code, quality of documentation"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "type": "content",
+    "text": "Use debugging tools"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "type": "content",
+    "text": "Determine sets of suitable test data"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "type": "content",
+    "text": "Determine typical errors experienced when developing code, including syntax, logic and runtime, and explain their likely causes"
+  },
+  {
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "type": "content",
+    "text": "Apply the key features of an object-oriented programming (OOP) language"
+  },
+  {
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "type": "content",
+    "text": "Compare procedural programming with OOP"
+  },
+  {
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "type": "content",
+    "text": "Use data flow diagrams, structure charts and class diagrams to represent a system"
+  },
+  {
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "type": "content",
+    "text": "Describe the process of design used to develop code in an OOP language"
+  },
+  {
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "type": "content",
+    "text": "Assess the effectiveness of programming code developed to implement an algorithm"
+  },
+  {
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "type": "content",
+    "text": "Investigate how OOP languages handle message-passing between objects"
+  },
+  {
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "type": "content",
+    "text": "Explain code optimisation in software engineering"
+  },
+  {
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "type": "content",
+    "text": "Outline the features of OOP that support collaborative code development"
+  },
+  {
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Programming in OOP",
+    "type": "content",
+    "text": "Design and implement computer programs involving branching, iteration and functions in an OOP language for an identified need or opportunity"
+  },
+  {
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Programming in OOP",
+    "type": "content",
+    "text": "Implement and modify OOP programming code"
+  },
+  {
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Programming in OOP",
+    "type": "content",
+    "text": "Apply methodologies to test and evaluate code"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "type": "content",
+    "text": "Outline applications of mechatronic systems in a variety of specialised fields"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "type": "content",
+    "text": "Identify the hardware requirements to run a program and the effect on code development"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "type": "content",
+    "text": "Identify and describe a range of sensors, actuators and end effectors/manipulators within existing mechatronic systems"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "type": "content",
+    "text": "Use different types of data and understand how it is obtained and processed in a mechatronic system, including diagnostic data and data used for optimisation"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "type": "content",
+    "text": "Experiment with software to control interactions and dependencies within mechatronic systems"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "type": "content",
+    "text": "Determine power, battery and material requirements for components of a mechatronic system"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "type": "content",
+    "text": "Develop wiring diagrams for a mechatronic system, considering data and power supply requirements"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "type": "content",
+    "text": "Determine specialist requirements that influence the design and functions of mechatronic systems designed for people with disability"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Designing control algorithms",
+    "type": "content",
+    "text": "Develop, modify and apply algorithms to control a mechatronic system"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Designing control algorithms",
+    "type": "content",
+    "text": "Explore the algorithmic patterns, code and applications for open and closed control systems"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Designing control algorithms",
+    "type": "content",
+    "text": "Outline the features of an algorithm and program code used for autonomous control"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "type": "content",
+    "text": "Design, develop and produce a mechatronic system for a real-world problem"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "type": "content",
+    "text": "Implement algorithms and design programming code to drive mechatronic devices"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "type": "content",
+    "text": "Develop simulations and prototypes of a potential mechatronic system to test programming code"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "type": "content",
+    "text": "Design, develop and implement programming code for a closed loop control system"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "type": "content",
+    "text": "Apply programming code to integrate sensors, actuators and end effectors/manipulators"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "type": "content",
+    "text": "Implement specific control algorithms that enhance the performance of a mechatronic system"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "type": "content",
+    "text": "Design, develop and implement a user interface (UI) to control a mechatronic system"
+  },
+  {
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "type": "content",
+    "text": "Create and use unit tests to determine the effectiveness and repeatability of each component’s control algorithm"
+  }
+]

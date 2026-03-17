@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topic — Stage 6 Self-Study Navigator</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .sa-answer-btn, .quiz-reset-btn {
+    padding: 0.375rem 0.75rem;
+    border-radius: var(--radius);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition);
+  }
+  .sa-answer-btn {
+    border: 1px solid var(--quiz);
+    color: var(--quiz);
+    background: transparent;
+  }
+  .sa-answer-btn:hover { background: var(--quiz); color: #fff; }
+  .quiz-reset-btn {
+    border: 1px solid var(--danger);
+    color: var(--danger);
+    background: transparent;
+    margin-left: 0.5rem;
+  }
+  .quiz-reset-btn:hover { background: var(--danger); color: #fff; }
+
+  .sa-answer {
+    display: none;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    background: rgba(34,197,94,0.06);
+    border-left: 3px solid var(--success);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  .sa-answer.visible { display: block; }
+
+  .teach-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--teach);
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: box-shadow var(--transition);
+  }
+  .teach-card:hover { box-shadow: var(--shadow); }
+  .teach-card__heading {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.5;
+  }
+
+  .section-group-heading {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.625rem 0 0.375rem;
+    margin-top: 0.75rem;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+  }
+  .section-group-heading:first-child { margin-top: 0; }
+
+  .quiz-section-heading {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--quiz);
+    padding: 0.5rem 0;
+    margin-top: 0.75rem;
+  }
+
+  .nav-topic-title { font-size: 0.875rem; color: var(--muted); max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  @media (max-width: 480px) {
+    .nav-topic-title { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <div>
+      <h1 class="site-header__title">Stage 6 Self-Study <span>Navigator</span></h1>
+    </div>
+    <div class="countdown" id="countdown">
+      <span>Final Prac in</span>
+      <span class="countdown__number" id="countdown-days">--</span>
+      <span class="countdown__label">days</span>
+    </div>
+  </div>
+</header>
+
+<main class="container container--narrow" style="padding-top: 0.75rem; padding-bottom: 2rem;">
+
+  <!-- Navigation -->
+  <nav class="topic-nav" id="topic-nav">
+    <a href="index.html" class="topic-nav__btn">← Dashboard</a>
+    <div style="display:flex; gap:0.5rem; align-items:center;">
+      <a href="#" class="topic-nav__btn" id="prev-btn" style="visibility:hidden">← <span class="nav-topic-title" id="prev-label">Prev</span></a>
+      <a href="#" class="topic-nav__btn" id="next-btn" style="visibility:hidden"><span class="nav-topic-title" id="next-label">Next</span> →</a>
+    </div>
+  </nav>
+
+  <!-- Topic Header -->
+  <div class="topic-header" id="topic-header">
+    <h1 class="topic-header__title" id="topic-title">Loading...</h1>
+    <div class="topic-header__meta" id="topic-meta"></div>
+    <div class="progress-ring" id="progress-ring">
+      <svg class="progress-ring__svg" viewBox="0 0 80 80">
+        <circle class="progress-ring__track" cx="40" cy="40" r="34" />
+        <circle class="progress-ring__fill" id="ring-fill" cx="40" cy="40" r="34"
+          stroke-dasharray="213.628" stroke-dashoffset="213.628" />
+      </svg>
+      <span class="progress-ring__text" id="ring-text">0%</span>
+    </div>
+  </div>
+
+  <!-- Mode Tabs -->
+  <div class="mode-tabs">
+    <button class="mode-tab active" data-mode="learn">📖 Learn</button>
+    <button class="mode-tab" data-mode="quiz">❓ Quiz</button>
+    <button class="mode-tab" data-mode="teach">🏫 Teach</button>
+  </div>
+
+  <!-- Mode Content -->
+  <div class="mode-content active" id="mode-learn"></div>
+  <div class="mode-content" id="mode-quiz"></div>
+  <div class="mode-content" id="mode-teach"></div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Stage 6 Self-Study Navigator &mdash; Yunshu Gao</p>
+  </div>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+
+  // ─── State ────────────────────────────────────────────────────
+  const STORAGE_KEY = 's6_study';
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) return JSON.parse(raw);
+    } catch(e) {}
+    return { completed: {}, quizAnswered: {} };
+  }
+  function saveState(s) { localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); }
+  let state = loadState();
+
+  // ─── URL Params ───────────────────────────────────────────────
+  const params = new URLSearchParams(window.location.search);
+  const SUBJECT = params.get('subject');  // ec or swe
+  const YEAR = params.get('year');        // y11 or y12
+  const TOPIC = params.get('topic');
+
+  if (!SUBJECT || !YEAR || !TOPIC) {
+    document.getElementById('topic-title').textContent = 'Missing parameters';
+    return;
+  }
+
+  const DATA_KEY = `${SUBJECT}_${YEAR}`;
+
+  // ─── Countdown ────────────────────────────────────────────────
+  const TARGET = new Date('2026-05-11T00:00:00');
+  function updateCountdown() {
+    const diff = TARGET - new Date();
+    const days = Math.max(0, Math.ceil(diff / 86400000));
+    document.getElementById('countdown-days').textContent = days;
+    if (days <= 14) document.getElementById('countdown').classList.add('countdown--urgent');
+  }
+  updateCountdown();
+
+  // ─── Helpers ──────────────────────────────────────────────────
+  function sanitise(s) {
+    return s.replace(/[^a-zA-Z0-9]+/g, '_').replace(/^_|_$/g, '');
+  }
+  function cpId(subject, year, topic, idx) {
+    return `${subject}-${year}-${sanitise(topic)}_cp${idx}`;
+  }
+
+  // ─── Simple Markdown Renderer ─────────────────────────────────
+  function renderMarkdown(md) {
+    if (!md) return '';
+    let html = md;
+
+    // Code blocks (``` ... ```)
+    html = html.replace(/```(\w*)\n([\s\S]*?)```/g, (_, lang, code) => {
+      return `<pre style="background:rgba(0,0,0,0.06);padding:0.75rem;border-radius:6px;overflow-x:auto;font-size:0.8125rem;line-height:1.5;margin:0.5rem 0"><code>${escapeHtml(code.trim())}</code></pre>`;
+    });
+
+    // Inline code
+    html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+
+    // Split into lines for block-level processing
+    const lines = html.split('\n');
+    let result = [];
+    let inList = false;
+    let inOl = false;
+    let listItems = [];
+
+    function flushList() {
+      if (listItems.length > 0) {
+        const tag = inOl ? 'ol' : 'ul';
+        result.push(`<${tag}>${listItems.join('')}</${tag}>`);
+        listItems = [];
+      }
+      inList = false;
+      inOl = false;
+    }
+
+    for (let line of lines) {
+      const trimmed = line.trim();
+
+      // Skip empty lines
+      if (trimmed === '') {
+        flushList();
+        continue;
+      }
+
+      // Headings
+      if (trimmed.startsWith('#### ')) {
+        flushList();
+        result.push(`<h4>${inlineFormat(trimmed.slice(5))}</h4>`);
+        continue;
+      }
+      if (trimmed.startsWith('### ')) {
+        flushList();
+        result.push(`<h3>${inlineFormat(trimmed.slice(4))}</h3>`);
+        continue;
+      }
+      if (trimmed.startsWith('## ')) {
+        flushList();
+        result.push(`<h2>${inlineFormat(trimmed.slice(3))}</h2>`);
+        continue;
+      }
+
+      // Unordered list
+      if (/^[-*]\s+/.test(trimmed)) {
+        if (inOl) flushList();
+        inList = true;
+        listItems.push(`<li>${inlineFormat(trimmed.replace(/^[-*]\s+/, ''))}</li>`);
+        continue;
+      }
+
+      // Ordered list
+      if (/^\d+[.)]\s+/.test(trimmed)) {
+        if (inList && !inOl) flushList();
+        inOl = true;
+        inList = true;
+        listItems.push(`<li>${inlineFormat(trimmed.replace(/^\d+[.)]\s+/, ''))}</li>`);
+        continue;
+      }
+
+      // Blockquote
+      if (trimmed.startsWith('> ')) {
+        flushList();
+        result.push(`<blockquote>${inlineFormat(trimmed.slice(2))}</blockquote>`);
+        continue;
+      }
+
+      // Paragraph
+      flushList();
+      result.push(`<p>${inlineFormat(trimmed)}</p>`);
+    }
+    flushList();
+
+    return result.join('');
+  }
+
+  function inlineFormat(s) {
+    // Bold
+    s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    // Italic
+    s = s.replace(/\*(.+?)\*/g, '<em>$1</em>');
+    // Inline code (already handled above for full md, but catch remaining)
+    s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+    return s;
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  // ─── Data Loading ─────────────────────────────────────────────
+  let contentData = [];
+  let explanationData = [];
+  let questionData = [];
+  let allTopics = []; // ordered list of topics for prev/next nav
+
+  async function loadData() {
+    const [content, explanations, questions] = await Promise.all([
+      fetch(`data/${DATA_KEY}_content.json`).then(r => r.json()),
+      fetch(`data/${DATA_KEY}_explanations.json`).then(r => r.json()),
+      fetch(`data/${DATA_KEY}_questions.json`).then(r => r.json())
+    ]);
+
+    // All content for this subject+year
+    const fullContent = content;
+
+    // Build ordered topic list for prev/next navigation
+    const seen = new Set();
+    for (const c of fullContent) {
+      if (!seen.has(c.topic)) {
+        seen.add(c.topic);
+        allTopics.push(c.topic);
+      }
+    }
+
+    // Filter for current topic
+    contentData = fullContent.filter(c => c.topic === TOPIC);
+    explanationData = explanations.filter(e => e.topic === TOPIC);
+    questionData = questions.filter(q => q.topic === TOPIC);
+
+    if (contentData.length === 0) {
+      document.getElementById('topic-title').textContent = `Topic not found: "${TOPIC}"`;
+      return;
+    }
+
+    buildHeader();
+    buildPrevNext();
+    buildLearnMode();
+    buildQuizMode();
+    buildTeachMode();
+    updateProgressRing();
+  }
+
+  // ─── Header ───────────────────────────────────────────────────
+  function buildHeader() {
+    document.title = `${TOPIC} — Stage 6 Study`;
+    document.getElementById('topic-title').textContent = TOPIC;
+
+    const subjectLabel = SUBJECT === 'ec' ? 'Enterprise Computing' : 'Software Engineering';
+    const yearLabel = YEAR === 'y11' ? 'Year 11' : 'Year 12';
+    const meta = document.getElementById('topic-meta');
+    meta.innerHTML = `
+      <span class="badge badge--${SUBJECT}">${subjectLabel}</span>
+      <span class="badge badge--${YEAR}">${yearLabel}</span>
+      <span style="font-size:0.8125rem; color:var(--muted)">${contentData.length} content points · ${questionData.length} questions</span>
+    `;
+
+    // Set ring colour
+    document.getElementById('ring-fill').style.stroke = `var(--${SUBJECT})`;
+  }
+
+  // ─── Prev/Next Navigation ────────────────────────────────────
+  function buildPrevNext() {
+    const idx = allTopics.indexOf(TOPIC);
+    if (idx > 0) {
+      const prev = allTopics[idx - 1];
+      const btn = document.getElementById('prev-btn');
+      btn.href = `topic.html?subject=${SUBJECT}&year=${YEAR}&topic=${encodeURIComponent(prev)}`;
+      btn.style.visibility = 'visible';
+      document.getElementById('prev-label').textContent = prev;
+    }
+    if (idx < allTopics.length - 1) {
+      const next = allTopics[idx + 1];
+      const btn = document.getElementById('next-btn');
+      btn.href = `topic.html?subject=${SUBJECT}&year=${YEAR}&topic=${encodeURIComponent(next)}`;
+      btn.style.visibility = 'visible';
+      document.getElementById('next-label').textContent = next;
+    }
+  }
+
+  // ─── Progress Ring ────────────────────────────────────────────
+  function updateProgressRing() {
+    const total = contentData.length;
+    let done = 0;
+    contentData.forEach((c, i) => {
+      if (state.completed[cpId(SUBJECT, YEAR, TOPIC, i)]) done++;
+    });
+    const pct = total > 0 ? Math.round(done / total * 100) : 0;
+    const circ = 2 * Math.PI * 34; // ~213.628
+    const offset = circ - (pct / 100 * circ);
+    document.getElementById('ring-fill').style.strokeDashoffset = offset;
+    document.getElementById('ring-text').textContent = pct + '%';
+  }
+
+  // ─── LEARN MODE ───────────────────────────────────────────────
+  function buildLearnMode() {
+    const container = document.getElementById('mode-learn');
+    container.innerHTML = '';
+
+    // Group content by section
+    const sections = [];
+    const sectionMap = new Map();
+    for (let i = 0; i < contentData.length; i++) {
+      const c = contentData[i];
+      if (!sectionMap.has(c.section)) {
+        const arr = [];
+        sectionMap.set(c.section, arr);
+        sections.push({ name: c.section, items: arr });
+      }
+      sectionMap.get(c.section).push({ ...c, globalIdx: i });
+    }
+
+    for (const section of sections) {
+      // Section heading
+      const heading = document.createElement('div');
+      heading.className = `topic-section-heading${SUBJECT === 'swe' ? ' topic-section-heading--swe' : ''}`;
+      heading.textContent = section.name;
+      container.appendChild(heading);
+
+      for (const item of section.items) {
+        const id = cpId(SUBJECT, YEAR, TOPIC, item.globalIdx);
+        const isDone = !!state.completed[id];
+
+        // Find matching explanation
+        const expl = explanationData.find(e =>
+          e.section === item.section && e.content_text === item.text
+        );
+
+        const card = document.createElement('div');
+        card.className = `content-point${isDone ? ' content-point--done' : ''}`;
+        card.innerHTML = `
+          <div class="content-point__header">
+            <input type="checkbox" class="content-point__checkbox" data-id="${id}" ${isDone ? 'checked' : ''}>
+            <span class="content-point__text">${item.text}</span>
+            ${expl ? '<button class="content-point__toggle">Show Explanation</button>' : ''}
+          </div>
+          ${expl ? `
+          <div class="content-point__explanation">
+            <div class="md-content">${renderMarkdown(expl.explanation)}</div>
+            <div class="teaching-callout">
+              <div class="teaching-callout__title">🏫 Teaching Example</div>
+              <div class="md-content">${renderMarkdown(expl.teaching_example)}</div>
+            </div>
+          </div>` : ''}
+        `;
+
+        // Checkbox toggle
+        const cb = card.querySelector('.content-point__checkbox');
+        cb.addEventListener('change', () => {
+          if (cb.checked) {
+            state.completed[id] = true;
+            card.classList.add('content-point--done');
+          } else {
+            delete state.completed[id];
+            card.classList.remove('content-point--done');
+          }
+          saveState(state);
+          updateProgressRing();
+        });
+
+        // Explanation toggle
+        const toggleBtn = card.querySelector('.content-point__toggle');
+        if (toggleBtn) {
+          const explDiv = card.querySelector('.content-point__explanation');
+          toggleBtn.addEventListener('click', () => {
+            const showing = explDiv.classList.toggle('visible');
+            toggleBtn.textContent = showing ? 'Hide Explanation' : 'Show Explanation';
+          });
+        }
+
+        container.appendChild(card);
+      }
+    }
+  }
+
+  // ─── QUIZ MODE ────────────────────────────────────────────────
+  function buildQuizMode() {
+    const container = document.getElementById('mode-quiz');
+    container.innerHTML = '';
+
+    if (questionData.length === 0) {
+      container.innerHTML = '<p style="color:var(--muted); text-align:center; padding:2rem 0;">No quiz questions available for this topic yet.</p>';
+      return;
+    }
+
+    // Score summary
+    const scoreDiv = document.createElement('div');
+    scoreDiv.className = 'quiz-score';
+    scoreDiv.id = 'quiz-score';
+    container.appendChild(scoreDiv);
+
+    // Reset button
+    const resetWrap = document.createElement('div');
+    resetWrap.style.textAlign = 'center';
+    resetWrap.style.marginBottom = '1rem';
+    resetWrap.innerHTML = '<button class="quiz-reset-btn" id="quiz-reset">Reset Quiz</button>';
+    container.appendChild(resetWrap);
+
+    // Group by section
+    let currentSection = '';
+
+    questionData.forEach((q, qIdx) => {
+      if (q.section !== currentSection) {
+        currentSection = q.section;
+        const sh = document.createElement('div');
+        sh.className = 'quiz-section-heading';
+        sh.textContent = currentSection;
+        container.appendChild(sh);
+      }
+
+      const qDiv = document.createElement('div');
+      qDiv.className = 'quiz-question';
+      qDiv.dataset.qid = q.id;
+
+      const typeLabel = q.type === 'MC' ? 'Multiple Choice'
+        : q.type === 'TF' ? 'True / False'
+        : q.type === 'SHORT' ? 'Short Answer'
+        : 'Scenario';
+
+      let bodyHtml = `
+        <div class="quiz-question__header">
+          <span class="quiz-question__type">${typeLabel}</span>
+          <span class="quiz-question__num">Q${qIdx + 1}</span>
+        </div>
+        <div class="quiz-question__text">${q.question}</div>
+      `;
+
+      if (q.type === 'MC') {
+        bodyHtml += '<div class="quiz-options">';
+        for (const opt of q.options) {
+          bodyHtml += `<button class="quiz-option" data-value="${opt.charAt(0)}">${opt}</button>`;
+        }
+        bodyHtml += '</div>';
+      } else if (q.type === 'TF') {
+        bodyHtml += `
+          <div class="tf-buttons">
+            <button class="tf-btn tf-btn--true" data-value="True">True</button>
+            <button class="tf-btn tf-btn--false" data-value="False">False</button>
+          </div>
+        `;
+      } else {
+        // SHORT or SCENARIO
+        bodyHtml += `<button class="sa-answer-btn">Show Answer</button>`;
+        bodyHtml += `<div class="sa-answer"><strong>Answer:</strong> ${q.answer}</div>`;
+      }
+
+      bodyHtml += `<div class="quiz-explanation">${q.explanation || ''}</div>`;
+      qDiv.innerHTML = bodyHtml;
+
+      // Wire up interactions
+      if (q.type === 'MC') {
+        const prevAnswer = state.quizAnswered[q.id];
+        const options = qDiv.querySelectorAll('.quiz-option');
+        const explEl = qDiv.querySelector('.quiz-explanation');
+
+        if (prevAnswer) {
+          // Already answered — restore state
+          restoreMC(options, q.answer, prevAnswer === 'correct', explEl);
+        }
+
+        options.forEach(btn => {
+          btn.addEventListener('click', () => {
+            if (btn.disabled) return;
+            const chosen = btn.dataset.value;
+            const correctLetter = q.answer.charAt(0);
+            const isCorrect = chosen === correctLetter;
+
+            state.quizAnswered[q.id] = isCorrect ? 'correct' : 'wrong';
+            saveState(state);
+
+            options.forEach(o => {
+              o.disabled = true;
+              if (o.dataset.value === correctLetter) {
+                o.classList.add('quiz-option--correct');
+              } else if (o === btn && !isCorrect) {
+                o.classList.add('quiz-option--wrong');
+              } else {
+                o.classList.add('quiz-option--dimmed');
+              }
+            });
+            explEl.classList.add('visible');
+            updateQuizScore();
+          });
+        });
+      } else if (q.type === 'TF') {
+        const tfBtns = qDiv.querySelectorAll('.tf-btn');
+        const explEl = qDiv.querySelector('.quiz-explanation');
+        const prevAnswer = state.quizAnswered[q.id];
+
+        // Determine correct TF answer
+        const correctTF = q.answer.toLowerCase().startsWith('true') ? 'True' : 'False';
+
+        if (prevAnswer) {
+          restoreTF(tfBtns, correctTF, prevAnswer === 'correct', explEl);
+        }
+
+        tfBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            if (btn.disabled) return;
+            const chosen = btn.dataset.value;
+            const isCorrect = chosen === correctTF;
+
+            state.quizAnswered[q.id] = isCorrect ? 'correct' : 'wrong';
+            saveState(state);
+
+            tfBtns.forEach(b => {
+              b.disabled = true;
+              if (b.dataset.value === correctTF) {
+                b.style.background = 'rgba(34,197,94,0.15)';
+                b.style.borderColor = 'var(--success)';
+                b.style.color = '#16a34a';
+              } else if (b === btn && !isCorrect) {
+                b.style.background = 'rgba(239,68,68,0.15)';
+                b.style.borderColor = 'var(--danger)';
+                b.style.color = '#dc2626';
+              }
+            });
+            explEl.classList.add('visible');
+            updateQuizScore();
+          });
+        });
+      } else {
+        // SHORT / SCENARIO
+        const showBtn = qDiv.querySelector('.sa-answer-btn');
+        const ansDiv = qDiv.querySelector('.sa-answer');
+        showBtn.addEventListener('click', () => {
+          ansDiv.classList.toggle('visible');
+          showBtn.textContent = ansDiv.classList.contains('visible') ? 'Hide Answer' : 'Show Answer';
+        });
+      }
+
+      container.appendChild(qDiv);
+    });
+
+    // Quiz reset
+    document.getElementById('quiz-reset').addEventListener('click', () => {
+      if (!confirm('Reset all quiz answers for this topic?')) return;
+      questionData.forEach(q => { delete state.quizAnswered[q.id]; });
+      saveState(state);
+      buildQuizMode();
+      updateQuizScore();
+    });
+
+    updateQuizScore();
+  }
+
+  function restoreMC(options, correctAnswer, wasCorrect, explEl) {
+    const correctLetter = correctAnswer.charAt(0);
+    options.forEach(o => {
+      o.disabled = true;
+      if (o.dataset.value === correctLetter) {
+        o.classList.add('quiz-option--correct');
+      } else {
+        o.classList.add('quiz-option--dimmed');
+      }
+    });
+    if (!wasCorrect) {
+      // We don't know which was picked, just show correct
+    }
+    explEl.classList.add('visible');
+  }
+
+  function restoreTF(btns, correctTF, wasCorrect, explEl) {
+    btns.forEach(b => {
+      b.disabled = true;
+      if (b.dataset.value === correctTF) {
+        b.style.background = 'rgba(34,197,94,0.15)';
+        b.style.borderColor = 'var(--success)';
+        b.style.color = '#16a34a';
+      }
+    });
+    explEl.classList.add('visible');
+  }
+
+  function updateQuizScore() {
+    const scoreEl = document.getElementById('quiz-score');
+    if (!scoreEl) return;
+
+    const gradable = questionData.filter(q => q.type === 'MC' || q.type === 'TF');
+    let answered = 0, correct = 0;
+    for (const q of gradable) {
+      const result = state.quizAnswered[q.id];
+      if (result) {
+        answered++;
+        if (result === 'correct') correct++;
+      }
+    }
+
+    scoreEl.innerHTML = `
+      <div class="quiz-score__number">${correct} / ${gradable.length}</div>
+      <div class="quiz-score__label">${answered} of ${gradable.length} answered · ${questionData.length} total questions (incl. short answer)</div>
+    `;
+  }
+
+  // ─── TEACH MODE ───────────────────────────────────────────────
+  function buildTeachMode() {
+    const container = document.getElementById('mode-teach');
+    container.innerHTML = '';
+
+    if (explanationData.length === 0) {
+      container.innerHTML = '<p style="color:var(--muted); text-align:center; padding:2rem 0;">No teaching examples available for this topic yet.</p>';
+      return;
+    }
+
+    // Group by section
+    const sections = [];
+    const sectionMap = new Map();
+    for (const e of explanationData) {
+      if (!sectionMap.has(e.section)) {
+        const arr = [];
+        sectionMap.set(e.section, arr);
+        sections.push({ name: e.section, items: arr });
+      }
+      sectionMap.get(e.section).push(e);
+    }
+
+    for (const section of sections) {
+      const heading = document.createElement('div');
+      heading.className = 'section-group-heading';
+      heading.textContent = section.name;
+      container.appendChild(heading);
+
+      for (const e of section.items) {
+        const card = document.createElement('div');
+        card.className = 'teach-card';
+        card.innerHTML = `
+          <div class="teach-card__heading">${e.content_text}</div>
+          <div class="teaching-callout" style="margin-top:0; border-left-width:0; background:transparent; padding:0;">
+            <div class="md-content">${renderMarkdown(e.teaching_example)}</div>
+          </div>
+        `;
+        container.appendChild(card);
+      }
+    }
+  }
+
+  // ─── Mode Tabs ────────────────────────────────────────────────
+  document.querySelectorAll('.mode-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.mode-content').forEach(c => c.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('mode-' + tab.dataset.mode).classList.add('active');
+    });
+  });
+
+  // ─── Init ─────────────────────────────────────────────────────
+  loadData();
+
+})();
+</script>
+</body>
+</html>

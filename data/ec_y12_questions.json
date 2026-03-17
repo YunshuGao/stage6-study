@@ -1,0 +1,1665 @@
+[
+  {
+    "id": "EC-Y12-001",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "MC",
+    "question": "Which of the following is an example of qualitative data?",
+    "options": [
+      "A) The number of students enrolled in a course",
+      "B) The temperature recorded each hour",
+      "C) Customer satisfaction described as happy, neutral, unhappy",
+      "D) The total revenue for Q3 2025"
+    ],
+    "answer": "C",
+    "explanation": "Qualitative data describes qualities or characteristics. Customer satisfaction in words is qualitative; counts, temperatures and revenue are quantitative."
+  },
+  {
+    "id": "EC-Y12-002",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "TF",
+    "question": "An integer data type would be most appropriate to store qualitative survey responses such as Agree, Neutral, Disagree.",
+    "answer": "False",
+    "explanation": "Qualitative categorical responses are best stored as string/text types, not integers."
+  },
+  {
+    "id": "EC-Y12-003",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "MC",
+    "question": "Which level of measurement has a true zero point and allows meaningful ratios?",
+    "options": [
+      "A) Nominal",
+      "B) Ordinal",
+      "C) Interval",
+      "D) Ratio"
+    ],
+    "answer": "D",
+    "explanation": "Ratio data has a true zero (e.g. weight, income). Interval lacks true zero, ordinal has ranked order only, nominal is categorical."
+  },
+  {
+    "id": "EC-Y12-004",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "SHORT",
+    "question": "Explain the difference between active and passive data collection, giving one example of each.",
+    "answer": "Active data collection requires deliberate effort such as conducting surveys. Passive data collection gathers data automatically without intervention, such as website analytics tracking clicks. Active methods give more control; passive methods capture larger volumes continuously.",
+    "explanation": "Understanding active vs passive collection is key for evaluating data sampling methods."
+  },
+  {
+    "id": "EC-Y12-005",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "MC",
+    "question": "Which criterion refers to whether data measures what it claims to measure?",
+    "options": [
+      "A) Reliability",
+      "B) Accuracy",
+      "C) Validity",
+      "D) Relevance"
+    ],
+    "answer": "C",
+    "explanation": "Validity concerns whether data truly measures the intended concept. Reliability is consistency, accuracy is correctness, relevance is applicability."
+  },
+  {
+    "id": "EC-Y12-006",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "SCENARIO",
+    "question": "A hospital has electronic check-in timestamps (secondary data) and could deploy staff with stopwatches (primary data) to measure patient wait times. Analyse the advantages and disadvantages of each approach.",
+    "answer": "Secondary data (timestamps) is cost-effective, covers large volumes, and is consistently formatted, but may miss the full patient experience. Primary data (stopwatch) allows targeted measurement and qualitative observations but is labour-intensive, subject to human error, and limited in scale. A combined approach provides both breadth and depth.",
+    "explanation": "Tests ability to assess relevance, accuracy, validity and reliability of primary and secondary data."
+  },
+  {
+    "id": "EC-Y12-007",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "SHORT",
+    "question": "Explain how informatics supports a deeper understanding of data, using a healthcare example.",
+    "answer": "Informatics combines data science, IT and domain expertise to extract meaningful insights. In healthcare, health informatics integrates patient records, imaging and genomic data to identify disease patterns, predict outcomes and improve treatment plans.",
+    "explanation": "Informatics bridges raw data and domain-specific understanding."
+  },
+  {
+    "id": "EC-Y12-008",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "MC",
+    "question": "Which method is BEST for presenting geographical bushfire risk data across Australian states?",
+    "options": [
+      "A) Pie chart",
+      "B) Bar graph",
+      "C) Thematic map",
+      "D) Line graph"
+    ],
+    "answer": "C",
+    "explanation": "Thematic maps are ideal for geographical data. Pie and bar charts lack spatial context; line graphs suit time-series."
+  },
+  {
+    "id": "EC-Y12-009",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "TF",
+    "question": "An email inbox is a structured dataset because emails have fields like sender, subject and date.",
+    "answer": "False",
+    "explanation": "While emails have structured metadata, the body is unstructured text. An email inbox is semi-structured."
+  },
+  {
+    "id": "EC-Y12-010",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "SHORT",
+    "question": "Explain how likes, emoticons and memes serve as alternative data sources for business feedback.",
+    "answer": "These provide sentiment indicators businesses can analyse to gauge public opinion. Negative emoji surges signal dissatisfaction; memes reveal cultural brand perception. They offer real-time unsolicited feedback at scale but require sentiment analysis tools to interpret.",
+    "explanation": "Alternative data sources extend traditional feedback in enterprise analytics."
+  },
+  {
+    "id": "EC-Y12-011",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "MC",
+    "question": "A researcher records some ages as negative numbers. This is an example of:",
+    "options": [
+      "A) Data uncertainty",
+      "B) Data error",
+      "C) Data limitation",
+      "D) Data bias"
+    ],
+    "answer": "B",
+    "explanation": "Negative ages are incorrect entries, a data error. Uncertainty is imprecision, limitations are constraints, bias is systematic skewing."
+  },
+  {
+    "id": "EC-Y12-012",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "MC",
+    "question": "In blockchain, what mechanism ensures stored data cannot be altered without detection?",
+    "options": [
+      "A) SQL triggers",
+      "B) Cryptographic hashing",
+      "C) Data normalisation",
+      "D) Redundant storage"
+    ],
+    "answer": "B",
+    "explanation": "Each block contains a hash of the previous block; alteration changes the hash, breaking the chain and making tampering detectable."
+  },
+  {
+    "id": "EC-Y12-013",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "SCENARIO",
+    "question": "A cloud database was accessed by unauthorised users who read unencrypted customer records. Identify TWO software features that should have been implemented to protect data privacy and security.",
+    "answer": "1) Encryption at rest so data is unreadable without decryption keys. 2) Role-based access control (RBAC) with multi-factor authentication to restrict access. Additional features include audit logging and intrusion detection systems.",
+    "explanation": "Tests understanding of software privacy and security features under the Australian Privacy Act 1988."
+  },
+  {
+    "id": "EC-Y12-014",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "MC",
+    "question": "The 3 Vs of big data are:",
+    "options": [
+      "A) Volume, Variety, Velocity",
+      "B) Value, Veracity, Volume",
+      "C) Velocity, Validity, Variety",
+      "D) Volume, Visualisation, Verification"
+    ],
+    "answer": "A",
+    "explanation": "Volume (amount), Variety (diverse types) and Velocity (speed of generation/processing)."
+  },
+  {
+    "id": "EC-Y12-015",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "TF",
+    "question": "Data mining always respects individual privacy because it only analyses aggregated datasets.",
+    "answer": "False",
+    "explanation": "Data mining can reveal sensitive personal information from aggregated data through re-identification, raising serious privacy concerns under the Privacy Act 1988."
+  },
+  {
+    "id": "EC-Y12-016",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "SHORT",
+    "question": "Explain how data scale impacts the choice of tools and infrastructure for analysis.",
+    "answer": "As data grows from kilobytes to petabytes, organisations move from spreadsheets to distributed platforms like Hadoop or cloud services. Larger scale requires more processing power, storage and sophisticated algorithms, impacting cost and workforce skills.",
+    "explanation": "Data scale affects every aspect of the data pipeline."
+  },
+  {
+    "id": "EC-Y12-017",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "MC",
+    "question": "Which storage method suits querying petabytes of structured transactional data?",
+    "options": [
+      "A) USB hard drives",
+      "B) Single-server relational database",
+      "C) Cloud-based data warehouse",
+      "D) Flat-file CSV system"
+    ],
+    "answer": "C",
+    "explanation": "Cloud data warehouses handle massive structured data with high availability and scalability."
+  },
+  {
+    "id": "EC-Y12-018",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Data quality",
+    "type": "SCENARIO",
+    "question": "A university wants to use student social media posts to study mental health trends. Discuss TWO ethical considerations.",
+    "answer": "1) Informed consent: Students must consent to their data being used, even if posts are public. 2) Anonymisation: Data must be de-identified per the Australian Privacy Principles (APPs) under the Privacy Act 1988 to prevent individuals being identified in findings.",
+    "explanation": "Ethical data use for social research requires balancing value against privacy rights."
+  },
+  {
+    "id": "EC-Y12-019",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Data quality",
+    "type": "MC",
+    "question": "Which Australian legislation primarily governs how organisations handle personal data?",
+    "options": [
+      "A) Copyright Act 1968",
+      "B) Privacy Act 1988",
+      "C) Telecommunications Act 1997",
+      "D) Cybercrime Act 2001"
+    ],
+    "answer": "B",
+    "explanation": "The Privacy Act 1988 governs collection, use, storage and disclosure of personal information."
+  },
+  {
+    "id": "EC-Y12-020",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Data quality",
+    "type": "TF",
+    "question": "Under Australian law, organisations must only notify individuals of data breaches involving financial data.",
+    "answer": "False",
+    "explanation": "The Notifiable Data Breaches scheme covers any breach likely to cause serious harm, not just financial data."
+  },
+  {
+    "id": "EC-Y12-021",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Data quality",
+    "type": "SHORT",
+    "question": "Explain how curated data on social media can influence social behaviour, with an example.",
+    "answer": "Algorithmically curated content creates filter bubbles reinforcing existing beliefs. For example, platforms showing only politically aligned news can increase polarisation and influence voting behaviour by selectively exposing users to particular narratives.",
+    "explanation": "Curated and communicated data shapes public opinion, a key ethical concern."
+  },
+  {
+    "id": "EC-Y12-022",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "MC",
+    "question": "Which function calculates the average of values in cells B2:B13?",
+    "options": [
+      "A) =SUM(B2:B13)",
+      "B) =AVERAGE(B2:B13)",
+      "C) =COUNT(B2:B13)",
+      "D) =MEDIAN(B2:B13)"
+    ],
+    "answer": "B",
+    "explanation": "AVERAGE calculates the arithmetic mean. SUM totals, COUNT counts entries, MEDIAN finds the middle value."
+  },
+  {
+    "id": "EC-Y12-023",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "SCENARIO",
+    "question": "A retail manager has 10,000 rows of sales data (Date, Product, Region, Quantity, Revenue). Describe how to use charts, statistical analysis and what-if modelling to identify underperforming regions.",
+    "answer": "Use pivot tables to aggregate revenue by region, apply AVERAGE and STDEV to find below-average regions, create bar charts for comparison, and use Goal Seek to calculate required sales increases. Scenario Manager can model pricing strategy effects on each region.",
+    "explanation": "Tests collating information using spreadsheet analysis features."
+  },
+  {
+    "id": "EC-Y12-024",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "MC",
+    "question": "To show only NSW records sorted by Revenue descending, which operations apply?",
+    "options": [
+      "A) Sort only",
+      "B) Filter then sort",
+      "C) Group then filter",
+      "D) Chart then filter"
+    ],
+    "answer": "B",
+    "explanation": "Filter to State=NSW, then sort by Revenue descending."
+  },
+  {
+    "id": "EC-Y12-025",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "SHORT",
+    "question": "Describe the key components of a data dashboard built using spreadsheet features.",
+    "answer": "Key components: interactive charts updating dynamically, KPI summary tiles, filter controls (slicers/dropdowns), conditional formatting highlighting thresholds, and pivot tables. Dashboards present a high-level overview while enabling drill-down.",
+    "explanation": "Dashboards synthesise multiple spreadsheet features into a single view."
+  },
+  {
+    "id": "EC-Y12-026",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "TF",
+    "question": "A flat-file database stores data in multiple related tables linked by keys.",
+    "answer": "False",
+    "explanation": "A flat-file database stores all data in a single table. Relational databases use multiple linked tables."
+  },
+  {
+    "id": "EC-Y12-027",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "MC",
+    "question": "Which represents correct normalisation for a school library database?",
+    "options": [
+      "A) Storing borrower name in every loan record",
+      "B) Separate tables for Books, Members and Loans linked by foreign keys",
+      "C) All data in a single spreadsheet",
+      "D) Duplicating book details in the Loans table"
+    ],
+    "answer": "B",
+    "explanation": "Normalisation separates data into related tables to eliminate redundancy, linked by foreign keys."
+  },
+  {
+    "id": "EC-Y12-028",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "SCENARIO",
+    "question": "A supermarket collects millions of transactions daily. Explain how machine learning and statistical modelling could analyse this big data as a prediction tool.",
+    "answer": "Association rule mining identifies frequently co-purchased products. Regression forecasts demand from historical sales and seasonality. Clustering segments customers for personalised marketing. Time-series analysis (ARIMA) predicts future trends. These optimise stock, reduce waste and increase revenue.",
+    "explanation": "Tests ML and statistical modelling applied to big data analytics."
+  },
+  {
+    "id": "EC-Y12-029",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "MC",
+    "question": "Which is NOT a primary purpose of data visualisation?",
+    "options": [
+      "A) Identifying patterns and trends",
+      "B) Communicating complex information clearly",
+      "C) Replacing the need for data analysis",
+      "D) Supporting decision-making"
+    ],
+    "answer": "C",
+    "explanation": "Visualisation complements analysis; it does not replace it."
+  },
+  {
+    "id": "EC-Y12-030",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "SHORT",
+    "question": "Describe how combining spreadsheet software with a creative design application enhances data visualisation.",
+    "answer": "Spreadsheets provide data processing, charting and statistics. Design apps (Illustrator, Canva) enhance visuals with custom graphics, typography and layouts. Combined workflows or integrated platforms like Tableau produce polished, interactive visualisations.",
+    "explanation": "Software features contribute to better understanding through combined workflows."
+  },
+  {
+    "id": "EC-Y12-031",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "SCENARIO",
+    "question": "An environmental group has Australian rainfall and crop yield data (2010-2025). Describe how to identify patterns and predict future trends.",
+    "answer": "Align datasets by year/region. Use scatter plots for correlation, trend lines for regression analysis, dual-axis charts for parallel trends, and correlation coefficients. Apply time-series forecasting. Highlight anomaly years. Present via interactive dashboards with filters.",
+    "explanation": "Tests interpreting and comparing datasets for predictive analytics."
+  },
+  {
+    "id": "EC-Y12-032",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "TF",
+    "question": "The evolution from mainframes to cloud computing had no significant impact on data analytics.",
+    "answer": "False",
+    "explanation": "Cloud provides scalable processing, GPUs enable ML, modern tools democratised analysis. Each advancement expanded analytics capabilities."
+  },
+  {
+    "id": "EC-Y12-033",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "MC",
+    "question": "Online Analytical Processing (OLAP) is best described as:",
+    "options": [
+      "A) A programming language for databases",
+      "B) Technology enabling fast multidimensional analysis from a data warehouse",
+      "C) A flat-file database system",
+      "D) A network protocol for data transfer"
+    ],
+    "answer": "B",
+    "explanation": "OLAP enables interactive multidimensional analysis with drill-down, roll-up, slice and dice on data cubes."
+  },
+  {
+    "id": "EC-Y12-034",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "SHORT",
+    "question": "Explain why data integrity is important when developing a data visualisation.",
+    "answer": "Data integrity ensures accuracy, completeness and consistency. Flawed data (missing values, duplicates, corruption) produces misleading visualisations leading to poor decisions. Data must be validated and cleaned beforehand.",
+    "explanation": "Integrity is foundational to trustworthy visualisation."
+  },
+  {
+    "id": "EC-Y12-035",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "MC",
+    "question": "How does enterprise data warehousing impact data visualisation?",
+    "options": [
+      "A) Eliminates the need for visualisation",
+      "B) Provides a centralised, cleaned repository enabling comprehensive visualisations",
+      "C) Only stores real-time data",
+      "D) Makes visualisation slower"
+    ],
+    "answer": "B",
+    "explanation": "Data warehouses consolidate data into a cleaned, structured repository for consistent analysis and visualisation."
+  },
+  {
+    "id": "EC-Y12-036",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "SCENARIO",
+    "question": "A demographics survey had 70% urban but only 20% rural response rate. Explain how this bias affects visualisation and suggest mitigation.",
+    "answer": "The visualisation would over-represent urban demographics. Mitigation: weight rural responses more heavily, conduct targeted rural follow-up surveys, label sampling limitations, or use stratified sampling in future collections.",
+    "explanation": "Tests evaluating bias in data collection, storage and analysis."
+  },
+  {
+    "id": "EC-Y12-037",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Interpreting data visualisations",
+    "type": "MC",
+    "question": "When evaluating visualisation software, which criterion is LEAST relevant?",
+    "options": [
+      "A) Data volume handling",
+      "B) The application icon colour",
+      "C) Integration with data sources",
+      "D) Interactivity features"
+    ],
+    "answer": "B",
+    "explanation": "Evaluation considers functionality: capacity, integration, interactivity. Icon appearance is irrelevant."
+  },
+  {
+    "id": "EC-Y12-038",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Interpreting data visualisations",
+    "type": "SHORT",
+    "question": "Explain what it means to interrogate data from a data visualisation, with an example.",
+    "answer": "Interrogating means actively questioning what the visualisation shows beyond surface observations. Viewing declining Q4 sales, interrogation asks: Which products? All regions? External correlations? Interactive features like filtering and tooltips support this analytical questioning.",
+    "explanation": "Interrogating requires critical thinking beyond passive observation."
+  },
+  {
+    "id": "EC-Y12-039",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Designing for user experience",
+    "type": "TF",
+    "question": "Graphic design tools like Adobe Illustrator can create custom visual elements enhancing data visualisations beyond standard charting tools.",
+    "answer": "True",
+    "explanation": "Design tools provide advanced control over typography, colour, custom icons and layout beyond default chart options."
+  },
+  {
+    "id": "EC-Y12-040",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Designing for user experience",
+    "type": "MC",
+    "question": "Which UX principle is MOST important for visualisations targeting non-technical audiences?",
+    "options": [
+      "A) Using many chart types",
+      "B) Prioritising clarity, simplicity and intuitive navigation",
+      "C) Including all data points",
+      "D) Advanced 3D rendering"
+    ],
+    "answer": "B",
+    "explanation": "Clarity and simplicity prevent cognitive overload and maximise comprehension for non-technical users."
+  },
+  {
+    "id": "EC-Y12-041",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Designing for user experience",
+    "type": "SHORT",
+    "question": "Describe THREE criteria you could use to evaluate the effectiveness of a user experience in a data visualisation.",
+    "answer": "1) Task completion rate: Can users find the information they need within a reasonable time? 2) Error rate: How often do users misinterpret or fail to interact with the visualisation correctly? 3) User satisfaction: Do users report the visualisation as intuitive and useful (measured via surveys or Net Promoter Score)? Additional criteria include learnability, accessibility compliance (WCAG standards) and cognitive load assessment.",
+    "explanation": "Developing evaluation criteria for UX effectiveness requires measurable, user-centred metrics."
+  },
+  {
+    "id": "EC-Y12-042",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Designing for user experience",
+    "type": "MC",
+    "question": "Which emerging technology is MOST likely to transform UI/UX design for data visualisations?",
+    "options": [
+      "A) Floppy disk storage",
+      "B) Augmented reality (AR) and virtual reality (VR)",
+      "C) Dot matrix printers",
+      "D) Dial-up modems"
+    ],
+    "answer": "B",
+    "explanation": "AR/VR technologies enable immersive, 3D data visualisation experiences where users can physically interact with data representations, transforming traditional 2D screen-based UI/UX paradigms."
+  },
+  {
+    "id": "EC-Y12-043",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Creating data visualisations",
+    "type": "SCENARIO",
+    "question": "You need to create a data visualisation showing Australian energy consumption trends. Describe the steps for researching, sourcing, organising and storing data appropriately.",
+    "answer": "1) Research: Identify reputable sources such as the Australian Bureau of Statistics (ABS), Australian Energy Market Operator (AEMO) and Department of Climate Change. 2) Source: Download datasets in CSV or API format, ensuring data covers required time periods and granularity. 3) Organise: Clean data by removing duplicates, handling missing values, standardising formats (dates, units) and categorising by energy type and state. 4) Store: Use a structured database or well-organised file system with version control, metadata documentation and backup procedures to ensure reproducibility and data integrity.",
+    "explanation": "Tests the systematic approach to data preparation for visualisation."
+  },
+  {
+    "id": "EC-Y12-044",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Creating data visualisations",
+    "type": "SHORT",
+    "question": "Explain how you would design a data visualisation incorporating big data to show predictive analysis of traffic patterns in Sydney.",
+    "answer": "Use real-time and historical traffic data from Transport for NSW. Apply machine learning models (e.g. gradient boosting) to predict congestion patterns. Design an interactive map-based dashboard with time sliders, heat map overlays for congestion intensity, and trend graphs showing predicted vs actual flow. Include filters for time of day, day of week and special events. Use colour coding for severity levels and provide drill-down capabilities for specific intersections.",
+    "explanation": "Tests designing visualisations representing trends, patterns, relationships and predictive analysis with big data."
+  },
+  {
+    "id": "EC-Y12-045",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Creating data visualisations",
+    "type": "MC",
+    "question": "Which method is MOST effective for maintaining data security in a data visualisation system?",
+    "options": [
+      "A) Sharing login credentials among team members",
+      "B) Implementing role-based access control with encryption and audit trails",
+      "C) Storing all data in plain text files on a shared drive",
+      "D) Disabling firewalls for easier access"
+    ],
+    "answer": "B",
+    "explanation": "RBAC restricts data access by user role, encryption protects data in transit and at rest, and audit trails track who accessed what data and when."
+  },
+  {
+    "id": "EC-Y12-046",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "MC",
+    "question": "A decision support system (DSS) is BEST described as:",
+    "options": [
+      "A) A system that makes all decisions automatically without human input",
+      "B) An interactive system that helps managers make semi-structured and unstructured decisions using data and models",
+      "C) A simple calculator for financial data",
+      "D) A database management system"
+    ],
+    "answer": "B",
+    "explanation": "A DSS supports human decision-making by providing data analysis, models and interactive tools for semi-structured problems where judgement is still required."
+  },
+  {
+    "id": "EC-Y12-047",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "SHORT",
+    "question": "Describe the three categories of decision-making within decision support systems.",
+    "answer": "1) Structured decisions: Routine, repetitive decisions with clear rules (e.g. reordering stock when inventory falls below threshold). 2) Semi-structured decisions: Some aspects can be automated but require human judgement (e.g. approving a loan based on credit score plus personal circumstances). 3) Unstructured decisions: Complex, novel situations with no predefined procedure (e.g. entering a new market). DSS is most valuable for semi-structured decisions.",
+    "explanation": "Understanding decision categories helps match DSS capabilities to business needs."
+  },
+  {
+    "id": "EC-Y12-048",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "MC",
+    "question": "Which is a common application of an expert system?",
+    "options": [
+      "A) Word processing",
+      "B) Medical diagnosis assistance",
+      "C) Video streaming",
+      "D) Social media posting"
+    ],
+    "answer": "B",
+    "explanation": "Expert systems are commonly used in medical diagnosis (e.g. MYCIN for bacterial infections), where they encode specialist knowledge into IF-THEN rules to provide diagnostic recommendations."
+  },
+  {
+    "id": "EC-Y12-049",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "TF",
+    "question": "The key features of an expert system include a knowledge base, an inference engine and a user interface.",
+    "answer": "True",
+    "explanation": "An expert system consists of: a knowledge base (storing domain expertise as rules and facts), an inference engine (applying logical reasoning to derive conclusions), and a user interface (allowing users to interact with the system)."
+  },
+  {
+    "id": "EC-Y12-050",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "SHORT",
+    "question": "Explain how expert systems advanced from purely rule-based systems to integrate probability.",
+    "answer": "Early expert systems used deterministic IF-THEN rules, which struggled with uncertainty. Advances in Bayesian networks, fuzzy logic and certainty factors allowed systems to handle probabilistic reasoning. For example, a medical expert system can now say a patient has a 75% probability of a condition rather than a binary yes/no. This was driven by increased computing power, better algorithms and the recognition that real-world knowledge is inherently uncertain.",
+    "explanation": "Understanding the evolution from deterministic to probabilistic reasoning is key to modern expert systems."
+  },
+  {
+    "id": "EC-Y12-051",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "SCENARIO",
+    "question": "Online shopping recommendations, GPS navigation and smart home assistants have become everyday technologies. Explain how changing human needs have shaped the proliferation of expert systems in these areas.",
+    "answer": "Consumer demand for personalisation drove recommendation engines (e.g. Amazon, Netflix) that use expert system logic to match preferences. The need for efficient travel in congested cities drove GPS systems using real-time data and rules for route optimisation. Desire for convenience and home automation led to smart assistants (Alexa, Google Home) that use expert system principles to manage devices. As lifestyles became busier and more connected, people increasingly expected technology to anticipate needs and automate routine decisions, directly fuelling expert system development.",
+    "explanation": "Tests understanding of how changing needs drive expert system proliferation."
+  },
+  {
+    "id": "EC-Y12-052",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "MC",
+    "question": "Which BEST describes how a simplistic intelligent agent operates in a search engine?",
+    "options": [
+      "A) It uses a fixed set of rules to match keywords to indexed pages",
+      "B) It learns from user behaviour to predict search intent using machine learning",
+      "C) It randomly selects pages to display",
+      "D) It only searches pages created in the last 24 hours"
+    ],
+    "answer": "A",
+    "explanation": "A simplistic agent uses basic rule-matching (keyword matching to indexed pages). A complex agent (option B) uses ML for predictive search and personalisation. Both operate in search engines, but the question asks about simplistic agents."
+  },
+  {
+    "id": "EC-Y12-053",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "SHORT",
+    "question": "Compare forward chaining and backward chaining as techniques used by inference engines.",
+    "answer": "Forward chaining starts from known facts and applies rules to derive new conclusions (data-driven). Example: Given symptoms, derive possible diagnoses. Backward chaining starts from a hypothesis and works backwards to find supporting evidence (goal-driven). Example: Given a suspected diagnosis, check if symptoms match. Forward chaining is better for monitoring/alerting systems; backward chaining suits diagnostic and troubleshooting applications.",
+    "explanation": "Different inference techniques suit different problem-solving approaches."
+  },
+  {
+    "id": "EC-Y12-054",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "MC",
+    "question": "Which hardware component is MOST critical for training machine learning models in intelligent systems?",
+    "options": [
+      "A) A standard inkjet printer",
+      "B) Graphics Processing Units (GPUs) or Tensor Processing Units (TPUs)",
+      "C) A barcode scanner",
+      "D) A standard keyboard"
+    ],
+    "answer": "B",
+    "explanation": "GPUs and TPUs provide the parallel processing power needed for the matrix operations in machine learning training. They dramatically accelerate model training compared to CPUs alone."
+  },
+  {
+    "id": "EC-Y12-055",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "TF",
+    "question": "Computational thinking (decomposition, pattern recognition, abstraction and algorithms) can be applied to designing intelligent systems.",
+    "answer": "True",
+    "explanation": "Computational thinking is fundamental: decomposition breaks complex problems into sub-tasks, pattern recognition identifies data trends, abstraction simplifies complexity, and algorithmic thinking defines the step-by-step logic for the system."
+  },
+  {
+    "id": "EC-Y12-056",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "MC",
+    "question": "Which diagram type would BEST communicate the logical flow of an intelligent system processing a loan application?",
+    "options": [
+      "A) A pie chart",
+      "B) A flowchart",
+      "C) A bar graph",
+      "D) A scatter plot"
+    ],
+    "answer": "B",
+    "explanation": "Flowcharts show sequential and conditional logic (decision points, processes, inputs/outputs), making them ideal for communicating the logical processes of an intelligent system. Data flow diagrams and infographics are also suitable."
+  },
+  {
+    "id": "EC-Y12-057",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "SCENARIO",
+    "question": "A large Australian bank implements an AI system to process loan applications, replacing 200 human assessors. Discuss TWO disruptive effects of this intelligent system.",
+    "answer": "1) Workforce displacement: 200 employees lose their roles, requiring retraining or redeployment. This disrupts livelihoods and may require government support programs. 2) Market disruption: The bank can process applications faster and cheaper, gaining competitive advantage. Smaller banks unable to afford similar AI may lose market share, consolidating the industry. Additional effects include changes to regulatory requirements and shifts in customer expectations for instant decisions.",
+    "explanation": "Tests understanding of the disruptive effects of intelligent systems on employment and industry."
+  },
+  {
+    "id": "EC-Y12-058",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "SHORT",
+    "question": "Identify TWO social and TWO ethical issues to consider when developing an intelligent system for hiring decisions.",
+    "answer": "Social issues: 1) Digital divide - candidates without technology access are disadvantaged. 2) Workforce trust - employees may resist AI-driven decisions affecting their careers. Ethical issues: 1) Algorithmic bias - training data reflecting historical discrimination perpetuates unfair outcomes for underrepresented groups. 2) Transparency and accountability - candidates deserve to know how decisions are made and have recourse if the system errs.",
+    "explanation": "Social and ethical considerations are critical in responsible AI development."
+  },
+  {
+    "id": "EC-Y12-059",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "MC",
+    "question": "Which is an example of an emerging technology associated with intelligent systems?",
+    "options": [
+      "A) Fax machines",
+      "B) Generative AI and large language models",
+      "C) Typewriters",
+      "D) Overhead projectors"
+    ],
+    "answer": "B",
+    "explanation": "Generative AI (e.g. GPT, DALL-E) and large language models represent cutting-edge intelligent systems technology, transforming content creation, customer service and decision support."
+  },
+  {
+    "id": "EC-Y12-060",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "SHORT",
+    "question": "Explain how intelligent systems combine innovative techniques and technologies to meet enterprise needs, with an example.",
+    "answer": "Intelligent systems integrate multiple technologies: machine learning for pattern recognition, natural language processing for human interaction, computer vision for image analysis, and IoT sensors for real-time data. For example, an Australian mining company might combine drone imagery (computer vision), equipment sensors (IoT), predictive maintenance algorithms (ML) and a management dashboard (data visualisation) into one intelligent system that reduces downtime, improves safety and optimises operations.",
+    "explanation": "Enterprise intelligent systems are typically multi-technology integrations."
+  },
+  {
+    "id": "EC-Y12-061",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "SCENARIO",
+    "question": "A smart factory wants to implement an IoT network linking 500 sensors, 50 robotic arms and a central AI system. Describe the infrastructure requirements for this intelligent network.",
+    "answer": "Requirements include: high-bandwidth, low-latency networking (5G or industrial Ethernet) connecting all devices; edge computing nodes near machinery for real-time processing; a central cloud server for data aggregation and AI model training; robust cybersecurity (firewalls, encryption, network segmentation); reliable power supply with redundancy; standardised communication protocols (MQTT, CoAP); sufficient data storage (on-premises and cloud) for sensor data volumes; and monitoring/management software for device health tracking.",
+    "explanation": "Tests understanding of IoT infrastructure requirements for enterprise intelligent networks."
+  },
+  {
+    "id": "EC-Y12-062",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "MC",
+    "question": "In an IoT network, surplus data refers to:",
+    "options": [
+      "A) Data that has been encrypted",
+      "B) Data collected beyond what is needed for the primary purpose",
+      "C) Data stored in a backup system",
+      "D) Data that has been deleted"
+    ],
+    "answer": "B",
+    "explanation": "Surplus data is collected incidentally beyond the primary purpose. For example, a smart thermostat may collect occupancy patterns beyond just temperature data. This raises privacy and storage concerns."
+  },
+  {
+    "id": "EC-Y12-063",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "TF",
+    "question": "Simulation and data modelling can be used to test automated systems before physical deployment, reducing risk and cost.",
+    "answer": "True",
+    "explanation": "Simulation creates virtual models of systems to test scenarios without physical risk. This is widely used in manufacturing, logistics and healthcare to optimise system design before implementation."
+  },
+  {
+    "id": "EC-Y12-064",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "SHORT",
+    "question": "Explain the role of intelligent systems in surveillance, discussing both benefits and concerns.",
+    "answer": "Benefits: Intelligent surveillance systems use facial recognition, behaviour analysis and anomaly detection to enhance public safety, prevent crime and monitor critical infrastructure. Concerns: Mass surveillance threatens civil liberties and privacy rights. Facial recognition has demonstrated racial and gender bias. Data collected may be misused or accessed by unauthorised parties. In Australia, the use of surveillance technology must comply with the Surveillance Devices Act and state legislation.",
+    "explanation": "Surveillance exemplifies the tension between security benefits and privacy/ethical concerns."
+  },
+  {
+    "id": "EC-Y12-065",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "MC",
+    "question": "How does AI support efficiency in an IoT network?",
+    "options": [
+      "A) By manually checking each sensor reading",
+      "B) By automatically analysing sensor data, detecting anomalies, predicting failures and optimising performance",
+      "C) By disconnecting malfunctioning devices permanently",
+      "D) By replacing all sensors with a single central device"
+    ],
+    "answer": "B",
+    "explanation": "AI processes vast IoT data streams in real-time, detecting patterns humans would miss. It enables predictive maintenance, energy optimisation and automated responses to anomalies."
+  },
+  {
+    "id": "EC-Y12-066",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "SCENARIO",
+    "question": "You are building an expert system for a plant nursery to diagnose plant diseases. Develop a set of THREE rules and TWO facts that could be used within this system.",
+    "answer": "Facts: F1: Tomato plants are susceptible to blight. F2: Yellow leaves can indicate nitrogen deficiency. Rules: R1: IF plant has brown spots on leaves AND spots have concentric rings THEN diagnosis is early blight (certainty 0.8). R2: IF leaves are yellowing from bottom up AND soil pH is above 7 THEN diagnosis is nitrogen deficiency (certainty 0.7). R3: IF plant has white powdery coating on leaves THEN diagnosis is powdery mildew (certainty 0.9).",
+    "explanation": "Tests ability to develop rules and facts for an expert system knowledge base."
+  },
+  {
+    "id": "EC-Y12-067",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "SHORT",
+    "question": "Explain what certainty factors are and how they are applied in constructing a decision tree for an expert system.",
+    "answer": "Certainty factors (CFs) are numerical values (typically -1 to +1 or 0 to 1) representing the degree of confidence in a conclusion. In a decision tree, each branch is assigned a CF based on how strongly the evidence supports that path. For example, a symptom strongly associated with a disease might have CF=0.9, while a weak indicator has CF=0.3. CFs are combined using formulas as the tree is traversed, producing a final confidence score for each conclusion.",
+    "explanation": "Certainty factors enable expert systems to handle uncertainty in decision-making."
+  },
+  {
+    "id": "EC-Y12-068",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "MC",
+    "question": "When verifying data sources for a decision support system, which factor is MOST important?",
+    "options": [
+      "A) The visual design of the data source website",
+      "B) The authority, accuracy, currency and bias of the data source",
+      "C) The number of pages on the website",
+      "D) Whether the data is in a colour PDF"
+    ],
+    "answer": "B",
+    "explanation": "Data source verification requires assessing authority (is the source credible?), accuracy (is data correct?), currency (is it up to date?) and bias (is it objective?). Visual design is irrelevant to data quality."
+  },
+  {
+    "id": "EC-Y12-069",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "SHORT",
+    "question": "Provide an example of IF-THEN rules for an expert system knowledge base that diagnoses computer network issues, presented as a flowchart description.",
+    "answer": "Start -> Check: Is the device connected to the network? IF NO THEN recommend checking cable/WiFi connection. IF YES -> Check: Can the device ping the router? IF NO THEN diagnosis is local network issue, recommend restarting router. IF YES -> Check: Can the device reach external websites? IF NO THEN diagnosis is DNS or ISP issue, recommend changing DNS servers. IF YES THEN diagnosis is application-specific problem, recommend checking application settings. Each decision point follows IF-THEN logic.",
+    "explanation": "Flowcharts map naturally to IF-THEN rule structures in expert system knowledge bases."
+  },
+  {
+    "id": "EC-Y12-070",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "SCENARIO",
+    "question": "Design a smart greenhouse system that automates temperature and humidity control. Describe the inputs, outputs and processing logic.",
+    "answer": "Inputs: Temperature sensors, humidity sensors, soil moisture sensors, light sensors, external weather data (API). Outputs: Heater on/off, cooling fan on/off, irrigation valves open/close, shade blinds position, ventilation louvres angle. Processing logic: IF temperature > 30C THEN activate cooling fans AND open ventilation. IF temperature < 15C THEN activate heater AND close ventilation. IF humidity > 80% THEN increase ventilation. IF soil moisture < 30% THEN open irrigation for 5 minutes. The system continuously monitors inputs and adjusts outputs to maintain optimal growing conditions.",
+    "explanation": "Tests designing an automated smart system with appropriate inputs, outputs and processing logic."
+  },
+  {
+    "id": "EC-Y12-071",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "MC",
+    "question": "Which programming approach would be MOST suitable for implementing automated processing in a smart system?",
+    "options": [
+      "A) Writing all logic in a word processor",
+      "B) Using event-driven programming with sensor input handlers",
+      "C) Printing rules on paper for manual reference",
+      "D) Using a slideshow application"
+    ],
+    "answer": "B",
+    "explanation": "Event-driven programming responds to sensor inputs (events) triggering appropriate processing routines, making it ideal for automated systems that must react to changing conditions in real-time."
+  },
+  {
+    "id": "EC-Y12-072",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "SHORT",
+    "question": "Describe how you would assess the output of a decision support system, including graphing proposed versus actual outputs.",
+    "answer": "Assessment involves: 1) Comparing proposed outputs (DSS recommendations) against actual outcomes using metrics like accuracy rate, false positive/negative rates. 2) Creating comparison graphs: scatter plots showing predicted vs actual values with a reference line, bar charts comparing recommendation categories, and time-series graphs showing how DSS accuracy changes over time. 3) Calculating success metrics such as precision, recall and F1 score. 4) Identifying patterns in errors to improve the system.",
+    "explanation": "Systematic assessment using graphing and metrics ensures DSS reliability."
+  },
+  {
+    "id": "EC-Y12-073",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "TF",
+    "question": "Expert systems contribute to the efficiency of larger intelligent systems by encoding specialist knowledge that would otherwise require human experts for every decision.",
+    "answer": "True",
+    "explanation": "Expert systems automate specialist decision-making, allowing intelligent systems to operate continuously without human expert availability, reducing response times and enabling scalability."
+  },
+  {
+    "id": "EC-Y12-074",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Identifying and defining",
+    "type": "MC",
+    "question": "Which tool is commonly used to manage and document the development of an enterprise system?",
+    "options": [
+      "A) A personal diary",
+      "B) Project management software such as Jira, Trello or Microsoft Project",
+      "C) A calculator",
+      "D) A photo editing application"
+    ],
+    "answer": "B",
+    "explanation": "Project management tools like Jira, Trello and Microsoft Project provide task tracking, Gantt charts, sprint boards, documentation and team collaboration features essential for enterprise system development."
+  },
+  {
+    "id": "EC-Y12-075",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Identifying and defining",
+    "type": "SHORT",
+    "question": "Explain how the changing nature of enterprise affects the development of computing projects, with an example.",
+    "answer": "Enterprises are increasingly global, digital-first and data-driven, requiring projects to be more agile and scalable. For example, the shift to remote work during COVID-19 required enterprises to rapidly develop cloud-based collaboration systems, accelerating digital transformation projects that might have taken years. The rise of AI, changing customer expectations and regulatory evolution (e.g. GDPR, Australian Privacy Act amendments) mean projects must be designed for adaptability and continuous iteration rather than fixed deliverables.",
+    "explanation": "Enterprise evolution directly shapes project scope, methodology and delivery expectations."
+  },
+  {
+    "id": "EC-Y12-076",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Researching and planning",
+    "type": "MC",
+    "question": "Which tool would BEST support the design phase of an enterprise system?",
+    "options": [
+      "A) A wireframing tool like Figma or Balsamiq",
+      "B) A music player",
+      "C) A spreadsheet with random numbers",
+      "D) A screen recorder"
+    ],
+    "answer": "A",
+    "explanation": "Wireframing and prototyping tools enable visual design of user interfaces, system architecture diagrams and workflow models that are essential during the design phase."
+  },
+  {
+    "id": "EC-Y12-077",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Researching and planning",
+    "type": "SHORT",
+    "question": "Describe how computational, design and systems thinking skills are used in developing an enterprise system.",
+    "answer": "Computational thinking: Decomposing the system into modules, recognising data patterns, abstracting complex processes into algorithms. Design thinking: Empathising with end users, defining problems from their perspective, ideating solutions, prototyping interfaces and testing with users. Systems thinking: Understanding how components interact, identifying feedback loops, considering the system within its broader enterprise environment, and anticipating how changes in one area affect others.",
+    "explanation": "All three thinking approaches are complementary in enterprise system development."
+  },
+  {
+    "id": "EC-Y12-078",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Researching and planning",
+    "type": "SCENARIO",
+    "question": "You are managing a team of five developers building an enterprise inventory system. Describe key collaborating and managing criteria you would select for this project.",
+    "answer": "Collaboration criteria: Clear role definitions, regular stand-up meetings (daily or bi-weekly), shared code repository (Git), standardised coding conventions, and documented APIs for module integration. Management criteria: Defined milestones with measurable deliverables, risk register and mitigation strategies, communication plan (Slack/Teams channels), version control branching strategy, regular stakeholder reviews, and a change management process for scope modifications. An Agile methodology with two-week sprints would balance flexibility with accountability.",
+    "explanation": "Tests selecting appropriate collaboration and management criteria for enterprise projects."
+  },
+  {
+    "id": "EC-Y12-079",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Producing and implementing",
+    "type": "MC",
+    "question": "Which tool helps identify both the requirements AND limitations of an enterprise system?",
+    "options": [
+      "A) A SWOT analysis",
+      "B) A colouring book",
+      "C) A music playlist",
+      "D) A video game"
+    ],
+    "answer": "A",
+    "explanation": "SWOT analysis (Strengths, Weaknesses, Opportunities, Threats) systematically identifies internal capabilities (requirements that can be met) and limitations (weaknesses and threats) of an enterprise system."
+  },
+  {
+    "id": "EC-Y12-080",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Producing and implementing",
+    "type": "SHORT",
+    "question": "Compare Agile, Waterfall and WAgile (hybrid) development approaches for enterprise systems.",
+    "answer": "Waterfall: Sequential phases (requirements, design, implementation, testing, deployment). Best for well-defined, stable requirements. Risk: late discovery of issues. Agile: Iterative sprints with continuous feedback. Best for evolving requirements and rapid delivery. Risk: scope creep without discipline. WAgile (hybrid): Uses Waterfall for overall project structure (phases, milestones) with Agile sprints within each phase. Combines predictability of Waterfall with flexibility of Agile. Best for enterprise projects needing both structure and adaptability.",
+    "explanation": "Understanding development approaches is essential for selecting the most suitable method."
+  },
+  {
+    "id": "EC-Y12-081",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Producing and implementing",
+    "type": "SCENARIO",
+    "question": "You have developed an enterprise payroll system and need to create an implementation plan. Describe the key elements and how you would test its feasibility.",
+    "answer": "Key elements: 1) Phased rollout plan (pilot department first, then organisation-wide). 2) Data migration strategy from the legacy system. 3) Staff training schedule. 4) Parallel running period where both old and new systems operate simultaneously. 5) Rollback plan if critical issues arise. 6) Go-live date and post-launch support. Feasibility testing: Conduct a proof-of-concept with sample data, stress test with expected user loads, verify integration with existing HR and finance systems, confirm compliance with Fair Work Act requirements, and obtain stakeholder sign-off on acceptance criteria.",
+    "explanation": "Tests developing an implementation plan and testing feasibility for an enterprise system."
+  },
+  {
+    "id": "EC-Y12-082",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Testing and evaluating",
+    "type": "MC",
+    "question": "What is the difference between verification and validation in enterprise system testing?",
+    "options": [
+      "A) They mean the same thing",
+      "B) Verification checks the system is built correctly; validation checks it meets user needs",
+      "C) Verification is done by users; validation is done by developers",
+      "D) Verification only applies to hardware"
+    ],
+    "answer": "B",
+    "explanation": "Verification asks 'Are we building the product right?' (meets specifications). Validation asks 'Are we building the right product?' (meets user needs). Both are essential for enterprise system quality assurance."
+  },
+  {
+    "id": "EC-Y12-083",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Testing and evaluating",
+    "type": "SHORT",
+    "question": "Describe THREE methods for verifying and validating an enterprise computing system.",
+    "answer": "Verification methods: 1) Code reviews and walkthroughs to check implementation against specifications. 2) Unit testing to verify individual components work correctly. 3) Integration testing to verify components interact properly. Validation methods: 1) User acceptance testing (UAT) where end users confirm the system meets their needs. 2) Beta testing with a subset of real users in production-like conditions. 3) Requirements traceability matrix ensuring every requirement has been implemented and tested.",
+    "explanation": "V&V ensures enterprise systems are both technically correct and fit for purpose."
+  },
+  {
+    "id": "EC-Y12-084",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "MC",
+    "question": "Which data type is MOST appropriate for storing Australian postcodes in a database?",
+    "options": [
+      "A) INTEGER",
+      "B) FLOAT",
+      "C) TEXT/VARCHAR",
+      "D) BOOLEAN"
+    ],
+    "answer": "C",
+    "explanation": "Although postcodes appear numeric, they should be stored as TEXT because leading zeros matter (e.g. 0800 in NT), they are not used in calculations, and they represent categories rather than quantities."
+  },
+  {
+    "id": "EC-Y12-085",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "SCENARIO",
+    "question": "A company collects customer location data via a mobile app. The data shows some customers apparently located in the middle of the ocean. Explain how errors, uncertainty and limitations in data could cause this and how to address it.",
+    "answer": "Errors: GPS hardware malfunction or software bugs could record incorrect coordinates. Uncertainty: GPS accuracy varies (5-10m typically, worse indoors or in urban canyons), and some readings may default to 0,0 coordinates (Gulf of Guinea). Limitations: GPS does not work well indoors; Wi-Fi triangulation may be inaccurate; users may spoof locations. To address: implement validation rules rejecting coordinates outside Australia, use data cleaning scripts to flag anomalies, cross-reference with other data (IP address, billing address), and document known limitations in metadata.",
+    "explanation": "Tests understanding of errors, uncertainty and limitations in real-world data."
+  },
+  {
+    "id": "EC-Y12-086",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Data quality",
+    "type": "MC",
+    "question": "Which scenario BEST illustrates how curated data influences social behaviour?",
+    "options": [
+      "A) A spreadsheet formula calculating totals",
+      "B) A social media algorithm showing users only content that confirms their existing political views",
+      "C) A printer producing a report",
+      "D) A database performing a backup"
+    ],
+    "answer": "B",
+    "explanation": "Algorithmic curation creates echo chambers that reinforce beliefs and can polarise communities, directly influencing social behaviour and political engagement."
+  },
+  {
+    "id": "EC-Y12-087",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "TF",
+    "question": "Big data requires different visualisation techniques compared to small datasets because of the volume, variety and velocity challenges.",
+    "answer": "True",
+    "explanation": "Big data requires techniques like sampling for display, aggregation, interactive drill-down, streaming visualisation for velocity, and multi-format handling for variety. Traditional static charts cannot effectively represent big data."
+  },
+  {
+    "id": "EC-Y12-088",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Designing for user experience",
+    "type": "SCENARIO",
+    "question": "A government agency needs a data visualisation dashboard accessible to citizens with varying abilities. Describe criteria for evaluating the effectiveness of the user experience, including accessibility considerations.",
+    "answer": "Criteria: 1) WCAG 2.1 AA compliance (screen reader compatibility, keyboard navigation, sufficient colour contrast). 2) Task completion rate across diverse user groups (age, digital literacy, disability). 3) Time-to-insight: how quickly users find the information they need. 4) Error rate: frequency of user mistakes or confusion. 5) Responsive design performance across devices (mobile, tablet, desktop). 6) Alternative text for all visual elements. 7) User satisfaction surveys with representative demographic sampling. 8) Cognitive load assessment ensuring information is not overwhelming.",
+    "explanation": "Government dashboards require inclusive UX design meeting accessibility standards."
+  },
+  {
+    "id": "EC-Y12-089",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Creating data visualisations",
+    "type": "MC",
+    "question": "Which is NOT a valid method for maintaining data security in a visualisation system?",
+    "options": [
+      "A) Encrypting data at rest and in transit",
+      "B) Publishing all raw data publicly for transparency",
+      "C) Implementing user authentication and access control",
+      "D) Maintaining audit logs of data access"
+    ],
+    "answer": "B",
+    "explanation": "Publishing raw data publicly compromises security. Security methods include encryption, authentication, access control, audit logging and data masking."
+  },
+  {
+    "id": "EC-Y12-090",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "SCENARIO",
+    "question": "A logistics company uses an intelligent system combining GPS tracking, warehouse sensors and AI route optimisation. Explain how this system combines innovative techniques and technologies to meet enterprise needs.",
+    "answer": "GPS tracking provides real-time vehicle location data. Warehouse IoT sensors monitor inventory levels, temperature (for perishables) and loading bay status. AI route optimisation algorithms (e.g. genetic algorithms, reinforcement learning) process this data to: minimise delivery times by calculating optimal routes considering traffic, weather and delivery windows; predict demand to pre-position stock; automate warehouse operations; and provide real-time customer delivery estimates. The combination transforms logistics from reactive to predictive, reducing costs by 15-30% and improving customer satisfaction.",
+    "explanation": "Tests understanding of how intelligent systems integrate multiple technologies for enterprise efficiency."
+  },
+  {
+    "id": "EC-Y12-091",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "SHORT",
+    "question": "Describe the types of data collected in a smart home IoT network, distinguishing between relevant and surplus data.",
+    "answer": "Relevant data: temperature readings for climate control, motion sensor data for security, energy consumption for optimisation, voice commands for smart assistants. Surplus data: detailed movement patterns revealing daily routines, audio recordings beyond wake words capturing private conversations, energy usage patterns revealing when occupants are home/away. Surplus data raises privacy concerns as it can be exploited for surveillance or profiling beyond the intended smart home functionality.",
+    "explanation": "Distinguishing relevant from surplus data is critical for IoT privacy."
+  },
+  {
+    "id": "EC-Y12-092",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "MC",
+    "question": "Which application of simulation in enterprise is MOST accurate?",
+    "options": [
+      "A) Replacing all employees with robots",
+      "B) Modelling supply chain scenarios to test responses to disruptions before they occur",
+      "C) Printing reports faster",
+      "D) Deleting old databases"
+    ],
+    "answer": "B",
+    "explanation": "Simulation models allow enterprises to test what-if scenarios (supply chain disruptions, demand spikes, equipment failures) in a virtual environment, reducing risk and optimising responses."
+  },
+  {
+    "id": "EC-Y12-093",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "MC",
+    "question": "Which ethical issue is MOST directly raised by using AI for automated hiring decisions?",
+    "options": [
+      "A) Software licensing costs",
+      "B) Algorithmic bias perpetuating historical discrimination",
+      "C) Internet connection speed",
+      "D) Office furniture selection"
+    ],
+    "answer": "B",
+    "explanation": "AI trained on historical hiring data may perpetuate biases against women, minorities or other groups that were historically underrepresented, making algorithmic bias the primary ethical concern."
+  },
+  {
+    "id": "EC-Y12-094",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "TF",
+    "question": "A certainty factor of 0.9 in an expert system indicates very high confidence in a conclusion.",
+    "answer": "True",
+    "explanation": "Certainty factors typically range from 0 (no confidence) to 1 (absolute confidence). A CF of 0.9 indicates 90% confidence, which is very high."
+  },
+  {
+    "id": "EC-Y12-095",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "SHORT",
+    "question": "Explain the difference between a flat-file database and a relational database, giving one advantage of each.",
+    "answer": "A flat-file database stores all data in a single table/file (e.g. a CSV). Advantage: simple to create and use for small datasets. A relational database organises data across multiple linked tables using primary and foreign keys. Advantage: eliminates data redundancy, supports complex queries (SQL), and maintains data integrity through normalisation. Relational databases are essential for enterprise applications; flat files suit simple, small-scale needs.",
+    "explanation": "Understanding database structures is fundamental to data science and enterprise computing."
+  },
+  {
+    "id": "EC-Y12-096",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "MC",
+    "question": "Which SQL statement would retrieve all customers from NSW ordered by surname?",
+    "options": [
+      "A) SELECT * FROM Customers WHERE State = 'NSW' ORDER BY Surname;",
+      "B) INSERT INTO Customers VALUES ('NSW');",
+      "C) DELETE FROM Customers WHERE State = 'NSW';",
+      "D) UPDATE Customers SET State = 'NSW';"
+    ],
+    "answer": "A",
+    "explanation": "SELECT retrieves data, WHERE filters by condition, ORDER BY sorts results. INSERT adds records, DELETE removes them, and UPDATE modifies existing records."
+  },
+  {
+    "id": "EC-Y12-097",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "MC",
+    "question": "Which visualisation type is BEST suited for showing the composition of Australian energy sources as proportions of total generation?",
+    "options": [
+      "A) Scatter plot",
+      "B) Stacked bar chart or pie chart",
+      "C) Histogram",
+      "D) Box plot"
+    ],
+    "answer": "B",
+    "explanation": "Stacked bar charts and pie charts effectively show parts of a whole, making them ideal for displaying proportional composition like energy source mix."
+  },
+  {
+    "id": "EC-Y12-098",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "SHORT",
+    "question": "Describe how voice assistants like Siri or Google Assistant use intelligent agents to initiate interaction with search engines.",
+    "answer": "Voice assistants use: 1) Speech recognition (converting voice to text using deep neural networks). 2) Natural language processing to interpret intent and extract key entities from the query. 3) Predictive search to anticipate what the user is looking for based on context, history and trending queries. 4) Integration with search engine APIs to retrieve results. 5) Text-to-speech to deliver results verbally. Complex agents personalise responses based on user history and preferences, while simplistic agents match keywords to predefined responses.",
+    "explanation": "Voice assistants demonstrate the integration of multiple AI technologies in intelligent agents."
+  },
+  {
+    "id": "EC-Y12-099",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Researching and planning",
+    "type": "MC",
+    "question": "Which is the BEST example of systems thinking in enterprise system development?",
+    "options": [
+      "A) Writing code for a single module in isolation",
+      "B) Considering how a new payroll system affects HR, finance, employee self-service and regulatory compliance simultaneously",
+      "C) Choosing a font for the user interface",
+      "D) Backing up a single database table"
+    ],
+    "answer": "B",
+    "explanation": "Systems thinking considers the whole system and its interconnections. Understanding how one module affects others across the organisation is the essence of systems thinking in enterprise development."
+  },
+  {
+    "id": "EC-Y12-100",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Producing and implementing",
+    "type": "TF",
+    "question": "A feasibility study should be conducted after the enterprise system has been fully built and deployed.",
+    "answer": "False",
+    "explanation": "Feasibility studies (technical, economic, operational, scheduling) should be conducted early in the project lifecycle, before significant resources are committed to development, to determine whether the project is viable."
+  },
+  {
+    "id": "EC-Y12-101",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "SCENARIO",
+    "question": "An Australian retail chain wants to implement a data warehouse. Currently, sales data is in one system, inventory in another, and customer loyalty in a third. Explain how data warehousing using the 3 Vs concept would benefit this organisation.",
+    "answer": "Volume: The warehouse consolidates millions of transactions across all stores into one repository, enabling organisation-wide analysis impossible with separate systems. Variety: It integrates structured data (sales figures), semi-structured data (customer feedback) and potentially unstructured data (social media mentions) from the three disparate systems into a unified schema. Velocity: The warehouse can be designed with ETL pipelines processing daily or near-real-time data feeds, enabling timely decision-making. Benefits include cross-system analysis (e.g. correlating loyalty program engagement with purchasing patterns), historical trend analysis, and a single source of truth for reporting.",
+    "explanation": "Tests understanding of big data warehousing in an enterprise context."
+  },
+  {
+    "id": "EC-Y12-102",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Data quality",
+    "type": "SHORT",
+    "question": "Describe TWO legal issues surrounding data collection and handling that Australian organisations must consider.",
+    "answer": "1) Privacy Act 1988 compliance: Organisations must follow the 13 Australian Privacy Principles (APPs) governing how personal information is collected, used, disclosed and stored. This includes obtaining consent, providing privacy notices, and only collecting data necessary for the stated purpose. 2) Notifiable Data Breaches scheme: Organisations must notify the OAIC and affected individuals of eligible data breaches likely to cause serious harm, within 30 days of becoming aware. Failure to comply can result in significant penalties.",
+    "explanation": "Legal compliance is mandatory for all Australian organisations handling personal data."
+  },
+  {
+    "id": "EC-Y12-103",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "MC",
+    "question": "In an expert system knowledge base, which format represents an IF-THEN rule?",
+    "options": [
+      "A) SELECT * FROM diagnoses",
+      "B) IF temperature > 38 AND cough = true THEN recommend flu test",
+      "C) for i in range(10): print(i)",
+      "D) <html><body>Hello</body></html>"
+    ],
+    "answer": "B",
+    "explanation": "IF-THEN rules are the standard format for expert system knowledge bases, expressing conditional logic that maps conditions (antecedents) to conclusions (consequents)."
+  },
+  {
+    "id": "EC-Y12-104",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "SHORT",
+    "question": "Explain how you would implement automated processing using software for a smart irrigation system.",
+    "answer": "Use Python or Arduino C++ to create event-driven software: 1) Read soil moisture sensors at regular intervals (e.g. every 15 minutes). 2) Compare readings against threshold values stored in a configuration file. 3) IF moisture < threshold THEN activate irrigation pump for a calculated duration based on deficit. 4) Log all readings and actions to a database for monitoring. 5) Implement scheduling logic to avoid watering during peak sun hours. 6) Add weather API integration to skip irrigation if rain is forecast. 7) Create a web dashboard for remote monitoring and manual override.",
+    "explanation": "Tests implementing automated processing using software with real-world IoT application."
+  },
+  {
+    "id": "EC-Y12-105",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Identifying and defining",
+    "type": "SCENARIO",
+    "question": "You are documenting the development of a new enterprise CRM system. Describe the tools and processes you would use for project management and documentation.",
+    "answer": "Tools: 1) Jira or Azure DevOps for task tracking, sprint planning and bug tracking. 2) Confluence or SharePoint for documentation (requirements, design specs, meeting minutes). 3) Git/GitHub for version control of code and configuration. 4) Lucidchart or draw.io for system architecture and data flow diagrams. 5) Slack/Teams for team communication. Processes: 1) Agile ceremonies (daily standups, sprint reviews, retrospectives). 2) Requirements gathering through stakeholder interviews and user stories. 3) Change management process with approval workflows. 4) Regular status reporting to stakeholders. 5) Document versioning and review cycles.",
+    "explanation": "Tests knowledge of tools and processes for managing enterprise system development."
+  },
+  {
+    "id": "EC-Y12-106",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "MC",
+    "question": "What is the PRIMARY purpose of what-if modelling in a spreadsheet?",
+    "options": [
+      "A) To format cells with colours",
+      "B) To explore how changing input variables affects outcomes",
+      "C) To print the spreadsheet",
+      "D) To password-protect the file"
+    ],
+    "answer": "B",
+    "explanation": "What-if modelling (via Goal Seek, Scenario Manager, Data Tables) allows users to change input values and observe the effect on calculated outputs, supporting exploratory analysis and planning."
+  },
+  {
+    "id": "EC-Y12-107",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Interpreting data visualisations",
+    "type": "SCENARIO",
+    "question": "You are presented with a line graph showing Australian unemployment rates from 2015-2025. The y-axis starts at 3% rather than 0%. Explain how this design choice affects interpretation and what questions you would ask to interrogate this data.",
+    "answer": "Starting the y-axis at 3% exaggerates visual differences between data points, making small changes appear dramatic. A drop from 5% to 4% would visually appear as a 50% decrease rather than a 20% decrease. Interrogation questions: 1) Why was the axis truncated - to mislead or to show meaningful variation? 2) What is the actual range of variation? 3) Are there seasonal adjustments applied? 4) Does the data source (ABS) use consistent methodology throughout? 5) Are there definitional changes (e.g. how unemployment is measured) that affect comparability? 6) What external events (COVID-19, policy changes) explain unusual patterns?",
+    "explanation": "Tests critical interrogation of visualisation design choices and data interpretation."
+  },
+  {
+    "id": "EC-Y12-108",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "MC",
+    "question": "Which technology is MOST associated with current advances in AI-powered intelligent systems?",
+    "options": [
+      "A) Vacuum tubes",
+      "B) Deep learning neural networks",
+      "C) Punch cards",
+      "D) Magnetic tape storage"
+    ],
+    "answer": "B",
+    "explanation": "Deep learning neural networks (a subset of machine learning) drive current AI advances including image recognition, natural language processing and autonomous systems."
+  },
+  {
+    "id": "EC-Y12-109",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "SCENARIO",
+    "question": "An Australian city council is considering implementing an AI-powered surveillance system with facial recognition in public spaces. Discuss the role of intelligent systems in this surveillance context, covering both benefits and ethical concerns.",
+    "answer": "Benefits: Enhanced public safety through real-time identification of known offenders, missing persons located faster, traffic management optimisation, and automated incident detection reducing emergency response times. Ethical concerns: 1) Privacy - mass surveillance of citizens going about lawful activities. 2) Bias - facial recognition systems have demonstrated higher error rates for women and people of colour. 3) Function creep - systems deployed for safety may be repurposed for broader monitoring. 4) Legal compliance - must align with state surveillance legislation and the Privacy Act 1988. 5) Consent - citizens have not opted in to being tracked. 6) Data security - facial recognition databases are high-value targets for hackers.",
+    "explanation": "Tests understanding of intelligent systems in surveillance with balanced analysis."
+  },
+  {
+    "id": "EC-Y12-110",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Testing and evaluating",
+    "type": "TF",
+    "question": "User acceptance testing (UAT) is a form of validation rather than verification.",
+    "answer": "True",
+    "explanation": "UAT is validation because it checks whether the system meets user needs and business requirements (building the right product), rather than checking technical specifications (verification - building the product right)."
+  },
+  {
+    "id": "EC-Y12-111",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "SHORT",
+    "question": "Explain the difference between structured and unstructured datasets, giving two examples of each.",
+    "answer": "Structured data has a predefined format and is organised in rows and columns (e.g. a relational database of customer records, a CSV file of sales transactions). Unstructured data has no predefined format or organisation (e.g. social media posts, medical imaging files). Structured data is easier to search, query and analyse using SQL; unstructured data requires specialised tools like NLP or computer vision for analysis.",
+    "explanation": "Understanding data structure types is fundamental to choosing appropriate storage and analysis methods."
+  },
+  {
+    "id": "EC-Y12-112",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "SHORT",
+    "question": "Explain how OLAP cube operations (drill-down, roll-up, slice, dice) support data analysis in enterprise decision-making.",
+    "answer": "Drill-down: Moving from summary to detail (e.g. national sales to state-level to store-level). Roll-up: Aggregating data from detail to summary (e.g. daily to monthly to quarterly). Slice: Selecting a single dimension (e.g. viewing only Q3 data). Dice: Selecting multiple dimensions (e.g. Q3 data for NSW electronics). These operations allow managers to explore data at different granularities, supporting flexible ad-hoc analysis for strategic decisions.",
+    "explanation": "OLAP operations are fundamental to interactive data analysis in enterprise environments."
+  },
+  {
+    "id": "EC-Y12-113",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "SCENARIO",
+    "question": "A hospital implements an expert system for preliminary patient triage. Describe four key features this expert system would need and explain each.",
+    "answer": "1) Knowledge base: Contains medical rules, symptom-condition mappings and triage protocols encoded by emergency medicine specialists. 2) Inference engine: Applies forward chaining to match patient symptoms against rules, deriving urgency classifications. 3) User interface: Simple, clear interface for triage nurses to input symptoms quickly; displays recommendations with confidence levels. 4) Explanation facility: Provides reasoning for each triage decision so medical staff can verify and override if needed, maintaining accountability and trust. Additional features: learning module to incorporate new medical evidence, and integration with the hospital patient management system.",
+    "explanation": "Tests knowledge of expert system components in a practical application."
+  },
+  {
+    "id": "EC-Y12-114",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Producing and implementing",
+    "type": "MC",
+    "question": "Which implementation approach runs the old and new systems simultaneously to reduce risk?",
+    "options": [
+      "A) Direct cutover",
+      "B) Parallel running",
+      "C) Phased implementation",
+      "D) Pilot testing"
+    ],
+    "answer": "B",
+    "explanation": "Parallel running operates both old and new systems simultaneously, allowing comparison of outputs and providing a fallback. It is the safest but most resource-intensive approach."
+  },
+  {
+    "id": "EC-Y12-115",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "TF",
+    "question": "Ordinal data allows calculation of exact differences between values.",
+    "answer": "False",
+    "explanation": "Ordinal data shows rank order (e.g. 1st, 2nd, 3rd or Low, Medium, High) but the intervals between ranks are not necessarily equal. Only interval and ratio data allow meaningful calculation of differences."
+  },
+  {
+    "id": "EC-Y12-116",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Creating data visualisations",
+    "type": "SHORT",
+    "question": "Describe THREE methods to maintain data security when developing and deploying a data visualisation.",
+    "answer": "1) Encryption: Encrypt data at rest in databases and in transit via HTTPS/TLS when visualisations are accessed via web. 2) Access control: Implement role-based access (RBAC) so users only see data they are authorised to view; use row-level security in tools like Power BI. 3) Audit logging: Track who accesses which visualisations and data, when, to detect unauthorised access and maintain accountability. Additional methods: data masking for sensitive fields, regular security audits and penetration testing.",
+    "explanation": "Data security is critical throughout the visualisation lifecycle."
+  },
+  {
+    "id": "EC-Y12-117",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "MC",
+    "question": "Data flow diagrams (DFDs) are used in intelligent systems documentation to show:",
+    "options": [
+      "A) The physical layout of hardware",
+      "B) How data moves through the system between processes, data stores and external entities",
+      "C) The colour scheme of the user interface",
+      "D) The company organisational chart"
+    ],
+    "answer": "B",
+    "explanation": "DFDs document the logical flow of data through a system, showing processes, data stores, data flows and external entities. They are essential for communicating intelligent system logic."
+  },
+  {
+    "id": "EC-Y12-118",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Researching and planning",
+    "type": "SHORT",
+    "question": "Explain why selecting appropriate collaboration criteria is important for enterprise project success, with two examples.",
+    "answer": "Appropriate collaboration criteria ensure team efficiency, quality and alignment. Example 1: Choosing Git for version control ensures developers can work simultaneously without code conflicts, with full change history for accountability. Example 2: Establishing regular sprint reviews ensures stakeholders provide timely feedback, preventing costly rework from misunderstood requirements. Poor collaboration criteria (e.g. sharing code via email) lead to version confusion, duplicated effort and communication breakdowns.",
+    "explanation": "Collaboration criteria directly impact project delivery quality and team productivity."
+  },
+  {
+    "id": "EC-Y12-119",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "SCENARIO",
+    "question": "Design a relational database for a small online bookshop. Identify the tables, key fields and relationships, and describe one appropriate user view.",
+    "answer": "Tables: 1) Books (BookID PK, Title, Author, ISBN, Price, StockQty, CategoryID FK). 2) Customers (CustomerID PK, Name, Email, Address, Phone). 3) Orders (OrderID PK, CustomerID FK, OrderDate, TotalAmount, Status). 4) OrderItems (OrderItemID PK, OrderID FK, BookID FK, Quantity, LineTotal). 5) Categories (CategoryID PK, CategoryName). Relationships: Customers 1:M Orders, Orders 1:M OrderItems, Books 1:M OrderItems, Categories 1:M Books. User view for warehouse staff: A query joining Orders, OrderItems and Books filtered by Status='Pending' showing OrderID, BookTitle, Quantity and shelf location for order fulfilment.",
+    "explanation": "Tests computational thinking in relational database design with user views."
+  },
+  {
+    "id": "EC-Y12-120",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "SHORT",
+    "question": "Explain how AI supports efficiency in an IoT network, with a specific example.",
+    "answer": "AI analyses vast IoT data streams in real-time, identifying patterns and anomalies that humans cannot detect at scale. Example: In a smart building, AI processes data from thousands of sensors (occupancy, temperature, light, energy meters) to dynamically adjust HVAC, lighting and elevator scheduling. It learns occupancy patterns to pre-cool rooms before meetings, predicts equipment failures before they occur (predictive maintenance), and optimises energy consumption. This can reduce energy costs by 20-30% while improving occupant comfort.",
+    "explanation": "AI transforms raw IoT data into intelligent automated responses."
+  },
+  {
+    "id": "EC-Y12-121",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "MC",
+    "question": "Which is an example of passive data collection?",
+    "options": [
+      "A) Conducting face-to-face interviews",
+      "B) Distributing paper surveys",
+      "C) Website cookies tracking browsing behaviour automatically",
+      "D) Running a focus group"
+    ],
+    "answer": "C",
+    "explanation": "Website cookies automatically track user behaviour without active researcher intervention, making it passive collection. Interviews, surveys and focus groups all require active effort."
+  },
+  {
+    "id": "EC-Y12-122",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "SCENARIO",
+    "question": "An expert system for car fault diagnosis has been producing incorrect results 30% of the time. Describe how you would assess the output by comparing proposed versus actual outputs and suggest improvements.",
+    "answer": "Assessment: 1) Create a test dataset of known car faults with confirmed diagnoses. 2) Run each case through the expert system and record proposed diagnoses. 3) Compare proposed vs actual in a confusion matrix showing correct diagnoses, false positives and false negatives. 4) Graph accuracy rates by fault category using bar charts to identify which areas perform worst. 5) Calculate precision, recall and F1 score for each fault type. Improvements: Review and update IF-THEN rules for low-performing categories, adjust certainty factors based on observed accuracy, add new rules for fault patterns the system misses, and incorporate additional input variables (sensor data, mileage) to improve discrimination.",
+    "explanation": "Tests systematic assessment of DSS output using graphing and comparison methods."
+  },
+  {
+    "id": "EC-Y12-123",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Designing for user experience",
+    "type": "SHORT",
+    "question": "Discuss how emerging technologies like AR, VR and voice interfaces are impacting UI and UX design for data visualisations.",
+    "answer": "AR overlays data onto the physical world (e.g. maintenance technicians seeing equipment sensor data through AR glasses). VR enables immersive 3D data exploration (e.g. walking through a virtual model of financial data). Voice interfaces allow hands-free querying of dashboards. These technologies require fundamentally different UX paradigms: spatial design instead of 2D layouts, gesture-based interaction instead of mouse clicks, and audio feedback instead of visual-only. Challenges include motion sickness in VR, processing latency, accessibility for users with disabilities, and the need for new design standards.",
+    "explanation": "Emerging technologies are transforming how users interact with data visualisations."
+  },
+  {
+    "id": "EC-Y12-124",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Producing and implementing",
+    "type": "MC",
+    "question": "A SWOT analysis identifies which of the following about an enterprise system?",
+    "options": [
+      "A) Only the financial costs",
+      "B) Strengths, Weaknesses, Opportunities and Threats",
+      "C) Only the technical specifications",
+      "D) Only the user interface design"
+    ],
+    "answer": "B",
+    "explanation": "SWOT analysis is a strategic planning tool examining internal Strengths and Weaknesses plus external Opportunities and Threats, helping inform system requirements and limitations."
+  },
+  {
+    "id": "EC-Y12-125",
+    "subject": "EC",
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "SCENARIO",
+    "question": "Compare how a simplistic intelligent agent and a complex intelligent agent would handle the same search query: 'best Italian restaurant near me'. Describe the differences in their operation.",
+    "answer": "Simplistic agent: Matches keywords 'Italian', 'restaurant' and 'near me' against indexed pages. Returns results based on keyword density and basic location matching. Does not consider user preferences or context beyond the literal query. Complex agent: Uses NLP to understand intent (dining recommendation, not just information). Considers user history (past restaurant visits, cuisine preferences, price range). Integrates real-time data (current location via GPS, restaurant opening hours, current wait times). Applies machine learning models trained on review sentiment, user behaviour patterns and collaborative filtering. Personalises results (e.g. prioritising highly-rated options matching the user's typical price range and dietary preferences). Uses predictive search to suggest related queries.",
+    "explanation": "Tests understanding of simplistic versus complex intelligent agents in search engines."
+  }
+]

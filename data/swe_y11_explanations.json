@@ -1,0 +1,461 @@
+[
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Software development",
+    "content_text": "Explore fundamental software development steps used by programmers when designing software",
+    "explanation": "## Fundamental Software Development Steps\n\nSoftware development follows the **Software Development Life Cycle (SDLC)**.\n\n### The Core Steps\n\n1. **Requirements gathering/Analysis** - Understanding what the software needs to do.\n2. **Design** - Planning: data structures, algorithms, UI wireframes, architecture.\n3. **Implementation (Coding)** - Writing source code.\n4. **Testing** - Unit tests, integration tests, user acceptance testing.\n5. **Deployment** - Releasing to end users.\n6. **Maintenance** - Ongoing fixes, updates, improvements (longest phase).\n\n### Key Terminology\n- **SDLC**: Software Development Life Cycle\n- **Stakeholder**: Anyone affected by or interested in the software\n- **Scope**: Boundaries of what the software will and won't do\n- **Iteration**: Repeating steps to refine the solution\n\n### Real-World Example\nBuilding a school attendance app: gather requirements, design database and screens, code the app, test with sample data, deploy to teachers, maintain.\n\n### Common Exam Angles\n- Ordering the steps correctly\n- Explaining why skipping steps causes problems\n- Identifying which step a described activity belongs to",
+    "teaching_example": "### How to teach this\n\n**Analogy**: Compare to building a house - no bricks without a blueprint, no blueprint without knowing client wants.\n\n**Activity**: Brief for a simple app. Pairs write what to do at each SDLC step.\n\n**Misconception**: Students think coding is 90% of development. Requirements, design, and maintenance consume most effort.\n\n**Quick Assessment**: Five scrambled SDLC descriptions - match to correct step and order."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Software development",
+    "content_text": "Research and evaluate the prevalence and use of online code collaboration tools",
+    "explanation": "## Online Code Collaboration Tools\n\n### Major Platforms\n- **GitHub** - Most widely used (100M+ developers). Repos, PRs, issues, CI/CD.\n- **GitLab** - Complete DevOps platform, popular self-hosted.\n- **Bitbucket** - Integrates with Jira/Trello.\n- **Replit** - Online IDE, good for education.\n- **VS Code Live Share** - Real-time collaborative editing.\n\n### Key Features\n1. **Version Control (Git)** - Tracks changes, enables reverting.\n2. **Branching** - Work in isolation.\n3. **Pull/Merge Requests** - Review before merging.\n4. **Code Review** - Team quality comments.\n5. **Issue Tracking** - Bugs, features, tasks.\n6. **CI/CD** - Auto test and deploy.\n\n### Common Exam Angles\n- Features supporting collaboration\n- Advantages/disadvantages\n- How version control prevents data loss",
+    "teaching_example": "### How to teach this\n\n**Activity**: Class GitHub repo. Each student creates branch, adds file, submits PR.\n\n**Misconception**: Git vs GitHub confusion. Git is the tool; GitHub is the service.\n\n**Quick Assessment**: Three problems a 5-dev team faces without collaboration tools, and which feature solves each."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "content_text": "Apply computational thinking and algorithmic design by defining the key features of standard algorithms, including sequence, selection, iteration and identifying data that should be stored",
+    "explanation": "## Computational Thinking & Standard Structures\n\n### Four Pillars\n1. **Decomposition** - Break problem into sub-problems\n2. **Pattern Recognition** - Identify similarities\n3. **Abstraction** - Focus on important details\n4. **Algorithm Design** - Step-by-step solutions\n\n### Three Structures\n- **Sequence** - Instructions in order\n- **Selection** - IF-THEN-ELSE decisions\n- **Iteration** - FOR (known count), WHILE (pre-test), REPEAT-UNTIL (post-test)\n\n### Data to Store\n- Input data, Processing variables (counters, totals), Output data, Constants\n\n### Common Exam Angles\n- Identify control structures in pseudocode\n- List variables needed\n- Trace algorithms",
+    "teaching_example": "### How to teach this\n\n**Analogy**: Tea = sequence. Tea or coffee = selection. Stir until dissolved = iteration.\n\n**Activity**: Restaurant bill - identify data, structures, write pseudocode.\n\n**Misconception**: FOR vs WHILE confusion. FOR = known count; WHILE = condition-based.\n\n**Quick Assessment**: Three algorithms - label structures, classify variables."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "content_text": "Apply divide and conquer and backtracking as algorithmic design strategies",
+    "explanation": "## Divide and Conquer & Backtracking\n\n### Divide and Conquer\n1. Divide into sub-problems\n2. Conquer each\n3. Combine results\n\nExamples: Binary search O(log n), Merge sort O(n log n)\n\n### Backtracking\nExplore incrementally, abandon invalid paths, try alternatives.\n\nExamples: Maze solving, Sudoku, N-Queens\n\n### Common Exam Angles\n- How D&C improves efficiency\n- Trace binary search\n- When backtracking is appropriate",
+    "teaching_example": "### How to teach this\n\n**D&C**: Number guessing 1-100. Middle guess finds answer in max 7 vs 100 linear.\n\n**Backtracking**: Maze on paper with pencil traces.\n\n**Misconception**: Backtracking seems inefficient but prunes early.\n\n**Quick Assessment**: Trace binary search on 16-element sorted list."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "content_text": "Develop structured algorithms using pseudocode and flowcharts, including the use of subprograms",
+    "explanation": "## Pseudocode, Flowcharts & Subprograms\n\n### Pseudocode\nKeywords CAPITALS, indentation, meaningful names.\n\n### Flowchart Symbols\nOval=Start/End, Rectangle=Process, Parallelogram=I/O, Diamond=Decision\n\n### Subprograms\n- Procedures: perform task, NO return value\n- Functions: perform task, RETURN value\n\nPromote code reuse, readability, maintainability.\n\n### Common Exam Angles\n- Convert between pseudocode and flowcharts\n- Write pseudocode with subprograms",
+    "teaching_example": "### How to teach this\n\n**Activity**: Sandwich recipe as pseudocode then flowchart with decision and iteration.\n\n**Misconception**: Pseudocode too vague or too language-specific.\n\n**Quick Assessment**: Given flowchart, write pseudocode, identify subprogram candidates."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "content_text": "Use modelling tools including structure charts, abstraction and refinement diagrams to support top-down and bottom-up design",
+    "explanation": "## Modelling Tools\n\n### Structure Charts\nHierarchical module breakdown with calling relationships.\n\n### Abstraction\nHigh level = what; Low level = how. Hide unnecessary complexity.\n\n### Refinement (Stepwise)\nLevel 0 general -> Level 1 sub-steps -> Level 2 detailed steps\n\n### Top-Down vs Bottom-Up\n- Top-down: decompose from overall to detail\n- Bottom-up: build from components upward\n\n### Common Exam Angles\n- Draw structure charts\n- Apply stepwise refinement\n- Compare approaches",
+    "teaching_example": "### How to teach this\n\n**Activity**: ATM structure chart with decomposed modules.\n\n**Analogy**: Company org chart.\n\n**Misconception**: Abstraction means vague. It means focusing on what matters per level.\n\n**Quick Assessment**: Complete Level 2 of a refinement diagram."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "content_text": "Analyse the logic and structure of written algorithms",
+    "explanation": "## Analysing Algorithms\n\n### Logic: Correctness, completeness, termination, trace tables\n### Structure: Control structures, data flow, modularity, efficiency\n\n### Common Issues\nOff-by-one errors, missing ELSE, uninitialised variables, wrong operators, dead code\n\n### Common Exam Angles\n- Trace and determine output\n- Identify errors\n- Suggest improvements",
+    "teaching_example": "### How to teach this\n\n**Activity**: Three algorithms (correct, logic error, structural issue). Pairs trace and fix.\n\n**Misconception**: Mental tracing vs written trace tables. Written catches more errors.\n\n**Quick Assessment**: 10-line algorithm with subtle error - trace table to find it."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "content_text": "Identify procedures and functions in an algorithm",
+    "explanation": "## Procedures and Functions\n\n- **Procedures**: Perform task, NO return value\n- **Functions**: Perform task, RETURN value\n\n### Parameters\n- Value: copy passed\n- Reference: original passed\n\n### Identifying\n- PROCEDURE keyword = procedure\n- FUNCTION with RETURN = function\n\n### Common Exam Angles\n- Distinguish in code\n- Write each for tasks\n- Identify parameters and returns",
+    "teaching_example": "### How to teach this\n\n**Analogy**: Procedure = 'turn off lights' (action). Function = 'what is 7x8?' (returns 56).\n\n**Activity**: Classify 10 tasks as procedure or function.\n\n**Quick Assessment**: Four subprograms - classify, identify parameters and returns."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Designing algorithms",
+    "content_text": "Experiment with object-oriented programming, imperative, logic and functional programming paradigms",
+    "explanation": "## Programming Paradigms\n\n### Imperative: Step-by-step, change state. HOW to do it. (C, Python)\n### OOP: Objects with data+behaviour. Encapsulation, inheritance, polymorphism. (Java, C#)\n### Functional: Mathematical functions. WHAT to compute. Pure, immutable. (Haskell, Lisp)\n### Logic: Facts and rules, derive conclusions. (Prolog)\n\n### Common Exam Angles\n- Compare paradigms\n- Identify paradigm from code\n- Best paradigm for a problem",
+    "teaching_example": "### How to teach this\n\n**Activity**: Same problem in imperative, functional, OOP style. Compare.\n\n**Misconception**: One paradigm is best. Most languages support multiple.\n\n**Quick Assessment**: Four snippets - match to paradigm."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Data for software engineering",
+    "content_text": "Investigate the use of number systems for computing purposes, including binary, decimal and hexadecimal",
+    "explanation": "## Number Systems\n\n### Decimal (Base 10): 0-9, powers of 10\n### Binary (Base 2): 0-1, powers of 2. Computer native.\n### Hexadecimal (Base 16): 0-F, each digit = 4 bits. Compact binary.\n\n### Conversions\n- Decimal to Binary: divide by 2, read remainders\n- Binary to Hex: group 4 bits (10101100 = AC)\n- Hex to Decimal: multiply by powers of 16 (2F = 47)\n\n### Why Multiple?\n- Binary: how computers work\n- Hex: readable shorthand\n- Decimal: human-friendly",
+    "teaching_example": "### How to teach this\n\n**Activity**: Binary finger counting (10 fingers = count to 1023). Colour code decoding.\n\n**Misconception**: Memorise results instead of learning method.\n\n**Quick Assessment**: 15 conversions across all three systems."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Data for software engineering",
+    "content_text": "Represent integers using two's complement",
+    "explanation": "## Two's Complement\n\nStandard method for positive and negative integers.\n\n### Positive: Same as binary. MSB=0.\n### Negative: 1) Write positive binary 2) Invert bits 3) Add 1\n\nExample: -5 = 00000101 -> 11111010 -> 11111011\n\n### Reading: If MSB=1: invert, add 1, negate.\n11110100 -> 00001011 -> 00001100 = 12 -> -12\n\n### Ranges: 8-bit: -128 to +127. n-bit: -2^(n-1) to +2^(n-1)-1",
+    "teaching_example": "### How to teach this\n\n**Mnemonic**: Flip then Fix.\n\n**Scaffolding**: Start with -1, -2, -3 before larger values.\n\n**Misconception**: Forgetting to add 1 after inverting.\n\n**Quick Assessment**: 5 decimal to two's complement, 5 back to decimal."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Data for software engineering",
+    "content_text": "Investigate standard data types",
+    "explanation": "## Standard Data Types\n\n| Type | Description | Example |\n|------|-----------|--------|\n| Integer | Whole numbers | 42 |\n| Float | Decimal numbers | 3.14 |\n| String | Text | \"Hello\" |\n| Boolean | True/False | True |\n| Character | Single char | 'A' |\n\n### Key Points\n- Type safety: wrong type causes errors\n- Type conversion: int(\"42\")\n- Static vs Dynamic typing",
+    "teaching_example": "### How to teach this\n\n**Activity**: Assign types to school enrolment form fields.\n\n**Demo**: Python \"5\"+3 (error) vs int(\"5\")+3 (8).\n\n**Misconception**: \"123\" is not an integer - it's a string.\n\n**Quick Assessment**: 10 values - identify types."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Data for software engineering",
+    "content_text": "Create data dictionaries as a tool to describe data and data types, structure data, and record relationships",
+    "explanation": "## Data Dictionaries\n\nStructured reference documenting all data elements.\n\n### Per Field: name, type, size, description, constraints, default, relationships, examples\n\n### Why\n- Consistent data usage\n- Identify redundant/missing data\n- Support database design\n- Maintenance documentation",
+    "teaching_example": "### How to teach this\n\n**Activity**: Data dictionary for gaming profile.\n\n**Misconception**: Too vague (type: 'text'). Must be specific enough to implement.\n\n**Quick Assessment**: Library system - 6-field dictionary with types, constraints, relationships."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Data for software engineering",
+    "content_text": "Use data structures of arrays, records, trees and sequential files",
+    "explanation": "## Data Structures\n\n### Arrays: Same-type elements, accessed by index\n### Records: Different-type fields grouped, one entity\n### Trees: Hierarchical nodes. Root, leaves, edges.\n### Sequential Files: Ordered data, read beginning to end\n\n### Choosing\n- Array: many same-type items\n- Record: one entity, multiple attributes\n- Tree: hierarchical relationships\n- Sequential file: persistent ordered storage",
+    "teaching_example": "### How to teach this\n\n**Analogy**: Array = identical lockers. Record = wallet.\n\n**Activity**: Contact book with list of dictionaries.\n\n**Misconception**: Confusing array index with record field.\n\n**Quick Assessment**: Music app - choose structures for each requirement."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "content_text": "Apply skills in computational thinking and programming to develop a software solution",
+    "explanation": "## Developing Solutions\n\n### Process\n1. Understand (decomposition)\n2. Plan (abstraction, algorithms, data structures)\n3. Implement (code with good practices)\n4. Test and refine\n\n### Good Practices\nMeaningful names, comments, validation, consistent formatting, functions for modularity",
+    "teaching_example": "### How to teach this\n\n**Project**: Full process: requirements -> pseudocode -> Python -> test.\n\n**Misconception**: Jump to coding. Require pseudocode first.\n\n**Quick Assessment**: New scenario - pseudocode with variables and types."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "content_text": "Implement data structures that support data storage",
+    "explanation": "## Implementing Data Structures\n\n### Python Examples\n- Lists (arrays): `scores = [85, 92, 78]`\n- Dictionaries (records): `student = {\"name\": \"Alice\", \"age\": 16}`\n- Lists of dicts (array of records)\n- File I/O for persistent storage\n\n### Common Exam Angles\n- Write code to create/manipulate structures\n- Choose right structure\n- File operations",
+    "teaching_example": "### How to teach this\n\n**Hands-On**: Contact book with add, search, delete, save-to-file.\n\n**Scaffolding**: Arrays -> records -> combine -> file I/O.\n\n**Quick Assessment**: Given data table, store in Python and search by name."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "content_text": "Compare the execution of the Waterfall and Agile project management models as applied to software development",
+    "explanation": "## Waterfall vs Agile\n\n### Waterfall: Sequential phases, heavy docs, rigid, client at start/end\n### Agile: Iterative sprints, lighter docs, flexible, continuous client involvement\n\n| Aspect | Waterfall | Agile |\n|--------|-----------|-------|\n| Flexibility | Rigid | High |\n| Documentation | Heavy upfront | Lighter |\n| Delivery | One final | Incremental |\n| Risk | Late discovery | Early detection |",
+    "teaching_example": "### How to teach this\n\n**Activity**: Two teams build paper airplane - Waterfall vs Agile (3 sprints).\n\n**Misconception**: Agile = no planning. It plans continuously in smaller increments.\n\n**Quick Assessment**: Recommend model for startup vs government project with justifications."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "content_text": "Test and evaluate solutions, considering key aspects including functionality, performance, readability of code, quality of documentation",
+    "explanation": "## Testing and Evaluation\n\n### Four Criteria\n1. **Functionality**: Correct output, edge cases handled\n2. **Performance**: Speed, memory, scalability\n3. **Readability**: Names, formatting, comments, structure\n4. **Documentation**: User guide, technical docs, inline comments\n\n### Testing Types\nUnit, integration, system, user acceptance",
+    "teaching_example": "### How to teach this\n\n**Activity**: Two solutions to same problem - well-written vs messy. Evaluate both.\n\n**Misconception**: 'It works' is sufficient. Unreadable working code is a liability.\n\n**Quick Assessment**: Evaluate own code against each criterion, suggest improvements."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "content_text": "Use debugging tools",
+    "explanation": "## Debugging Tools\n\n- **Breakpoints**: Pause at specific lines to inspect variables\n- **Step-through**: Execute one line at a time (Into, Over, Out)\n- **Watch variables**: Monitor values in real time\n- **Call stack**: Chain of function calls\n- **Print debugging**: Quick but cluttered\n\n### Common Exam Angles\n- What each tool does\n- When to use each\n- Debugging strategies",
+    "teaching_example": "### How to teach this\n\n**Demo**: VS Code debugger live on buggy program.\n\n**Misconception**: Rely on print statements only. Breakpoints are faster for complex bugs.\n\n**Quick Assessment**: Match tool to scenario: wrong value (watch), wrong function (call stack), loop issue (step-through)."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "content_text": "Determine sets of suitable test data",
+    "explanation": "## Suitable Test Data\n\n### Three Categories\n1. **Normal**: Typical expected inputs\n2. **Boundary**: Values at edges of valid ranges\n3. **Abnormal**: Inputs that should be rejected\n\n### Test Case Documentation\nTest ID, Input, Expected output, Actual output, Pass/Fail",
+    "teaching_example": "### How to teach this\n\n**Activity**: Percentage field (0-100) - generate complete set: 3 normal, 4 boundary, 3 abnormal.\n\n**Misconception**: Only testing normal data. Bugs hide at boundaries.\n\n**Quick Assessment**: Password validator (8-20 chars, needs number) - 10 test cases all categories."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming fundamentals",
+    "section": "Developing solutions with code",
+    "content_text": "Determine typical errors experienced when developing code, including syntax, logic and runtime, and explain their likely causes",
+    "explanation": "## Types of Errors\n\n### Syntax: Grammar violations. Detected before running. Missing colons, brackets.\n### Logic: Runs but wrong results. Detected in testing. Wrong operator, bad conditions.\n### Runtime: Crashes during execution. Division by zero, invalid index.\n\n| | Syntax | Logic | Runtime |\n|---|--------|-------|--------|\n| Detected | Before run | Testing | During run |\n| Crash? | Won't start | No | Yes |\n| Difficulty | Easiest | Hardest | Medium |",
+    "teaching_example": "### How to teach this\n\n**Activity**: 9 snippets (3 per type) - classify, explain cause, propose fix.\n\n**Demo**: Deliberate errors showing different behaviours.\n\n**Misconception**: No error message = no errors. Logic errors are silent.\n\n**Quick Assessment**: Given program and wrong output, identify error type and cause."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "content_text": "Apply the key features of an object-oriented programming (OOP) language",
+    "explanation": "## Key OOP Features\n\n### Classes (blueprints) and Objects (instances)\n\n### Four Features\n1. **Encapsulation**: Bundle data+methods, restrict access\n2. **Inheritance**: New classes from existing ones\n3. **Polymorphism**: Same method, different responses\n4. **Abstraction**: Hide complexity, expose interfaces",
+    "teaching_example": "### How to teach this\n\n**Analogy**: Class = cookie cutter; objects = cookies.\n\n**Activity**: School system: Person -> Student, Teacher subclasses.\n\n**Misconception**: Confusing classes with objects.\n\n**Quick Assessment**: Identify which OOP feature each code line demonstrates."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "content_text": "Compare procedural programming with OOP",
+    "explanation": "## Procedural vs OOP\n\n### Procedural: Functions operating on separate data. Top-down. C, Pascal.\n### OOP: Objects with data+behaviour bundled. Class hierarchies. Java, Python.\n\n| Aspect | Procedural | OOP |\n|--------|-----------|-----|\n| Organisation | Functions | Objects |\n| Data access | Global/passed | Encapsulated |\n| Reuse | Libraries | Inheritance |\n| Best for | Small programs | Large systems |",
+    "teaching_example": "### How to teach this\n\n**Activity**: Solve same problem both ways. See how procedural scatters data, OOP organises it.\n\n**Misconception**: OOP always better. For small scripts, procedural is simpler.\n\n**Quick Assessment**: Two snippets - identify which is which, advantages of each."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "content_text": "Use data flow diagrams, structure charts and class diagrams to represent a system",
+    "explanation": "## System Diagrams\n\n### DFD: Data movement. External entities, processes, data stores, flows.\n### Structure Charts: Hierarchical module breakdown.\n### Class Diagrams (UML): Class name | attributes | methods. Relationships: inheritance, association, composition. Visibility: +public, -private.",
+    "teaching_example": "### How to teach this\n\n**Activity**: Library system - draw all three diagram types.\n\n**Misconception**: DFDs vs flowcharts. DFDs show data movement; flowcharts show logic.\n\n**Quick Assessment**: Create one of each diagram type from a description."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "content_text": "Describe the process of design used to develop code in an OOP language",
+    "explanation": "## OOP Design Process\n\n1. Identify classes (nouns in requirements)\n2. Define attributes and methods (verbs = methods)\n3. Establish relationships (inheritance, association, composition)\n4. Create class diagrams\n5. Implement with encapsulation\n6. Write object interaction code\n7. Test: unit then integration",
+    "teaching_example": "### How to teach this\n\n**Activity**: Pet shop paragraph - underline nouns (classes) and verbs (methods).\n\n**Misconception**: Every noun becomes a class. Distinguish classes from attributes.\n\n**Quick Assessment**: Pizza system - 3 classes with attributes, methods, relationships."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "content_text": "Assess the effectiveness of programming code developed to implement an algorithm",
+    "explanation": "## Assessing Code Effectiveness\n\n### Criteria\n- Correctness, Efficiency (time/space complexity), Readability, Maintainability, Robustness, Reusability\n\n### Process\n1. Test with comprehensive data\n2. Profile performance\n3. Code review\n4. Evaluate structure",
+    "teaching_example": "### How to teach this\n\n**Activity**: Two solutions - elegant vs messy. Rate on criteria 1-5.\n\n**Misconception**: Works = good. Show O(n^2) failing on large data.\n\n**Quick Assessment**: Evaluate own code, suggest one improvement per criterion."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "content_text": "Investigate how OOP languages handle message-passing between objects",
+    "explanation": "## Message Passing\n\nObjects communicate by invoking methods on each other.\n\n- **Sender**: Object calling the method\n- **Receiver**: Object whose method is called\n- **Message**: Method name + parameters\n- **Response**: Return value\n\n### Benefits\n- Interact through defined interfaces\n- Encapsulation maintained\n- Loose coupling\n- Polymorphism enabled",
+    "teaching_example": "### How to teach this\n\n**Analogy**: Sending a letter - write message, address to someone, they process and reply.\n\n**Activity**: Restaurant model: Customer -> Waiter -> Chef messages.\n\n**Misconception**: Direct attribute access instead of methods.\n\n**Quick Assessment**: 3 classes - describe 3 messages between them."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "content_text": "Explain code optimisation in software engineering",
+    "explanation": "## Code Optimisation\n\n### Performance: Efficient algorithms, appropriate data structures, minimise I/O\n### Memory: Appropriate types, lazy loading, generators\n### Readability: Refactor, remove dead code, design patterns\n\n### Best Practices\n1. Write correct readable code FIRST\n2. Profile to find bottlenecks\n3. Optimise only bottlenecks\n4. Measure improvement\n5. Don't sacrifice readability for minor gains",
+    "teaching_example": "### How to teach this\n\n**Activity**: Optimise inefficient code step by step, measure time difference.\n\n**Misconception**: Optimise everything. 80/20 rule: find the 20% causing 80% of slowdown.\n\n**Quick Assessment**: Code with three inefficiencies - identify and suggest improvements."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Understanding OOP",
+    "content_text": "Outline the features of OOP that support collaborative code development",
+    "explanation": "## OOP for Collaboration\n\n- **Encapsulation**: Work on classes independently with agreed interfaces\n- **Inheritance**: Shared base classes, independent subclasses\n- **Polymorphism**: Add new types without modifying existing code\n- **Interfaces**: Public methods as contracts between developers\n- **Modularity**: Classes/packages owned by different members",
+    "teaching_example": "### How to teach this\n\n**Activity**: Team project - each student builds a different class. Agree interfaces, code independently, integrate.\n\n**Misconception**: Collaboration = sharing files. True OOP collaboration = interface contracts.\n\n**Quick Assessment**: Three OOP features and how each helps a 4-person team."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Programming in OOP",
+    "content_text": "Design and implement computer programs involving branching, iteration and functions in an OOP language for an identified need or opportunity",
+    "explanation": "## OOP with Control Structures\n\nOOP uses the same structures (branching, iteration, functions) organised within classes.\n\n- Branching: IF/ELSE inside methods\n- Iteration: FOR/WHILE to process collections\n- Functions: Methods encapsulating behaviour\n\n### Design Process\n1. Identify need\n2. Class diagrams\n3. Implement\n4. Test methods then interactions",
+    "teaching_example": "### How to teach this\n\n**Project**: Real need (quiz app, inventory). OOP solution with 2+ classes.\n\n**Scaffolding**: Provide class diagram, students implement method bodies.\n\n**Misconception**: All logic in one class. Distribute across appropriate classes.\n\n**Quick Assessment**: Implement two methods - one branching, one iteration."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Programming in OOP",
+    "content_text": "Implement and modify OOP programming code",
+    "explanation": "## Implementing and Modifying OOP Code\n\n### Implementation\n- Creating classes with constructors\n- Inheritance with super()\n- Method overriding\n- Encapsulation (private/public)\n\n### Modification\n- Adding methods, overriding, refactoring, extending with subclasses, bug fixing\n\n### Good Practices\n- Short focused methods, meaningful names, maintain encapsulation, consistent style, docstrings",
+    "teaching_example": "### How to teach this\n\n**Activity**: Given base class, add method, create subclass, override method.\n\n**Pair Programming**: One writes class, partner modifies.\n\n**Misconception**: Duplicate code instead of inheritance.\n\n**Quick Assessment**: Base Vehicle -> ElectricVehicle subclass with new attribute and overridden method."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "The object-oriented paradigm",
+    "section": "Programming in OOP",
+    "content_text": "Apply methodologies to test and evaluate code",
+    "explanation": "## Testing OOP Code\n\n- **Unit Testing**: Individual methods/classes in isolation\n- **Integration Testing**: Object interactions\n- **Regression Testing**: Re-run after modifications\n- **Code Review**: OOP principles, readability, documentation\n- **TDD**: Write failing test, minimal code to pass, refactor",
+    "teaching_example": "### How to teach this\n\n**Activity**: Write unit tests BEFORE seeing implementation.\n\n**Code Review**: Pairs swap and review against checklist.\n\n**Misconception**: Only testing happy path. Require edge case and error tests.\n\n**Quick Assessment**: Class with 4 methods - 2 unit tests per method."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "content_text": "Outline applications of mechatronic systems in a variety of specialised fields",
+    "explanation": "## Mechatronic Applications\n\n- **Healthcare**: Robotic surgery, prosthetics, automated dispensing\n- **Manufacturing**: Assembly lines, CNC, quality control\n- **Agriculture**: Autonomous tractors, drones, automated irrigation\n- **Transport**: Autonomous vehicles, ABS, drone delivery\n- **Space/Defence**: Mars rovers, satellites, military drones\n- **Consumer**: Robot vacuums, smart home, gaming controllers",
+    "teaching_example": "### How to teach this\n\n**Activity**: Research one system - present sensors, actuators, software control.\n\n**Misconception**: Mechatronics = robots only. ABS brakes and elevators are mechatronic.\n\n**Quick Assessment**: Three fields with specific application, sensor, and actuator each."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "content_text": "Identify the hardware requirements to run a program and the effect on code development",
+    "explanation": "## Hardware Requirements\n\n### Key Hardware: Processor (speed), RAM (data capacity), I/O Pins, Communication interfaces\n\n### Effects on Code\n- Limited processor: efficient algorithms needed\n- Limited RAM: compact types, streaming\n- Real-time: millisecond response constraints\n- Power: energy-efficient code, sleep modes",
+    "teaching_example": "### How to teach this\n\n**Activity**: Compare Arduino (2KB RAM) vs Raspberry Pi (8GB). What can each run?\n\n**Misconception**: All computers equally powerful.\n\n**Quick Assessment**: Given system requirement, identify hardware and code adjustments."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "content_text": "Identify and describe a range of sensors, actuators and end effectors/manipulators within existing mechatronic systems",
+    "explanation": "## Sensors, Actuators, End Effectors\n\n### Sensors (Input): Ultrasonic, IR, Temperature, Light, Accelerometer, Pressure, Colour, GPS\n### Actuators (Output): DC Motor, Servo, Stepper, Solenoid, LED, Buzzer, Relay\n### End Effectors: Grippers, Welding torch, Spray nozzle, Suction cup, Cutting tool",
+    "teaching_example": "### How to teach this\n\n**Hands-On**: Real sensors and actuators if possible.\n\n**Rule**: Sensors SENSE (input), Actuators ACT (output).\n\n**Quick Assessment**: Robotic arm design - 2 sensors, 2 actuators, 1 end effector with justifications."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "content_text": "Use different types of data and understand how it is obtained and processed in a mechatronic system",
+    "explanation": "## Data in Mechatronics\n\n### Types: Analogue (continuous) vs Digital (discrete 0/1)\n\n### Obtaining: Sensor reads -> ADC converts analogue to digital -> microcontroller processes\n\n### Processing Pipeline\n1. Raw read (noisy)\n2. Filter/smooth\n3. Convert (calibration formula)\n4. Compare to thresholds\n5. Control decision\n6. Actuator output",
+    "teaching_example": "### How to teach this\n\n**Demo**: Temperature sensor -> raw ADC -> voltage -> Celsius. Live pipeline.\n\n**Misconception**: Sensors give ready values. Raw data needs conversion and filtering.\n\n**Quick Assessment**: Given raw ADC and specs, calculate physical measurement."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "content_text": "Experiment with software to control interactions and dependencies within mechatronic systems",
+    "explanation": "## Software Control\n\nSoftware coordinates hardware: reads sensors, applies logic, commands actuators, manages timing.\n\n### Dependencies: Motor waits for safety sensor. Multiple actuators coordinate.\n\n### Approaches\n- Sequential: steps in order\n- Event-driven: respond to events\n- State machine: defined states and transitions\n\n### Tools: Arduino IDE, MicroPython, Tinkercad, Wokwi",
+    "teaching_example": "### How to teach this\n\n**Activity**: Tinkercad traffic light with dependencies. Add pedestrian button.\n\n**Misconception**: Code not handling dependencies between components.\n\n**Quick Assessment**: State diagram for robot with states and sensor triggers."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "content_text": "Determine power, battery and material requirements for components of a mechatronic system",
+    "explanation": "## Power and Materials\n\n### Power: P = V x I. Total = sum of all components.\n### Battery: Capacity (mAh), voltage, discharge rate, weight, safety\n### Materials: Chassis, wiring gauge, connectors, mounting, environmental protection\n\nExample: Arduino(50mA) + 2 servos(400mA) + sensor(15mA) = 465mA. 2hr = 930mAh minimum.",
+    "teaching_example": "### How to teach this\n\n**Activity**: Plan mobile robot. Look up datasheets, calculate power, select battery.\n\n**Misconception**: Forget motors draw more under load.\n\n**Quick Assessment**: Component list + operating time -> select battery with justification."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "content_text": "Develop wiring diagrams for a mechatronic system",
+    "explanation": "## Wiring Diagrams\n\nVisual representation of electronic connections using standardised symbols.\n\n### Elements: Power rails, signal lines, pin assignments, component values\n\n### Best Practices\n- Label everything\n- Show pin numbers\n- Colour code (red=power, black=ground)\n- Include protection components\n\n### Tools: Fritzing, Tinkercad, KiCad",
+    "teaching_example": "### How to teach this\n\n**Activity**: Start simple (LED+resistor). Add complexity incrementally.\n\n**Misconception**: Forget ground connections or protection components.\n\n**Quick Assessment**: Draw wiring diagram for LED controlled by light sensor via Arduino."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Understanding mechatronic hardware and software",
+    "content_text": "Determine specialist requirements that influence the design and functions of mechatronic systems designed for people with disability",
+    "explanation": "## Designing for Disability\n\n### Requirements\n- **Accessibility**: Multiple input methods, adjustable sensitivity\n- **Safety**: Force-limiting, emergency stop, fail-safe\n- **Customisability**: Programmable per user\n- **Reliability**: Daily dependence\n- **Ergonomics**: Comfortable, compatible with equipment\n- **Feedback**: Visual + audio + haptic for different abilities",
+    "teaching_example": "### How to teach this\n\n**Empathy Activity**: Simulate disabilities, try standard interfaces.\n\n**Design Challenge**: Mechatronic solution for specific accessibility scenario.\n\n**Misconception**: Design for one disability only. Solutions should be customisable.\n\n**Quick Assessment**: Limited hand mobility - 5 requirements and design influence."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Designing control algorithms",
+    "content_text": "Develop, modify and apply algorithms to control a mechatronic system",
+    "explanation": "## Control Algorithms\n\n### Structure: INITIALISE -> LOOP: READ, PROCESS, SEND, WAIT\n\n### Types\n- On/Off: compare to threshold\n- Proportional: output proportional to error\n- PID: P+I+D for optimal control\n\n### Modifying: Tune parameters, add safety, add hysteresis, optimise timing",
+    "teaching_example": "### How to teach this\n\n**Activity**: Temperature control progression: on/off -> hysteresis -> proportional.\n\n**Misconception**: On/off is good enough. Show oscillation.\n\n**Quick Assessment**: Line-following robot algorithm. Modify for lost-line recovery."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Designing control algorithms",
+    "content_text": "Explore the algorithmic patterns, code and applications for open and closed control systems",
+    "explanation": "## Open vs Closed Loop\n\n### Open: No feedback. Execute regardless of result. Simple but inaccurate.\nExamples: Toaster, washing machine timer.\n\n### Closed: Sensor feedback adjusts output continuously. Complex but accurate.\nExamples: Thermostat, cruise control, self-balancing robot.\n\n### Applications\n- Open: predictable conditions, precision not critical\n- Closed: accuracy matters, conditions vary, safety important",
+    "teaching_example": "### How to teach this\n\n**Demo**: Robot drives 3sec (open) vs drives until 20cm from wall (closed).\n\n**Misconception**: All systems should be closed. Some work fine open-loop.\n\n**Quick Assessment**: Given open-loop algorithm, add sensor for closed-loop."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Designing control algorithms",
+    "content_text": "Outline the features of an algorithm and program code used for autonomous control",
+    "explanation": "## Autonomous Control\n\nOperating independently without human intervention.\n\n### Features\n- Continuous sensing (multiple sensors)\n- Decision-making (rules, state machines, ML)\n- Self-correction\n- Goal-oriented\n- Safety systems (failsafes)\n\n### Algorithm: INITIALISE -> WHILE goal NOT reached: SENSE, ASSESS, PLAN, EXECUTE, VERIFY, CHECK safety",
+    "teaching_example": "### How to teach this\n\n**Activity**: Program autonomous robot: explore, avoid obstacles, return.\n\n**Misconception**: Autonomous = perfect. All systems have limitations.\n\n**Quick Assessment**: 5 features an autonomous delivery drone needs."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "content_text": "Design, develop and produce a mechatronic system for a real-world problem",
+    "explanation": "## Building Mechatronic Systems\n\n### Process: Identify problem -> Research -> Requirements -> Design -> Prototype -> Test -> Document\n\n### Considerations\n- User needs and context\n- Constraints (budget, size, power, safety)\n- Feasibility\n- Integration of mechanical, electronic, software",
+    "teaching_example": "### How to teach this\n\n**Project**: Real problem (plant watering, security alarm). Full design-build-test.\n\n**Misconception**: Skip planning, jump to building. Require documentation first.\n\n**Quick Assessment**: Write requirements: 5 functional, 3 non-functional."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "content_text": "Implement algorithms and design programming code to drive mechatronic devices",
+    "explanation": "## Programming Mechatronic Devices\n\n### Core Patterns: Sensor reading, motor control (PWM), main control loop\n\n### Best Practices\n- Functions per component\n- Error handling for hardware\n- Appropriate delays\n- PWM for smooth control\n- Safety timeouts\n- Hardware-specific comments",
+    "teaching_example": "### How to teach this\n\n**Incremental**: Blink LED -> read button -> LED by button -> motor by sensor.\n\n**Misconception**: Blocking code (long delays) prevents sensor reads.\n\n**Quick Assessment**: Code for distance sensor controlling a servo."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "content_text": "Develop simulations and prototypes of a potential mechatronic system to test programming code",
+    "explanation": "## Simulations and Prototypes\n\n### Simulations: Software models. No cost, safe, fast. May miss real-world variables.\n### Prototypes: Physical hardware. Tests real physics. More expensive, slower.\n\n### Workflow: Simulate -> breadboard components -> integrated prototype -> refined -> final build",
+    "teaching_example": "### How to teach this\n\n**Activity**: Design in Tinkercad, build on real breadboard. Compare.\n\n**Misconception**: Simulation success = real success. Real testing is essential.\n\n**Quick Assessment**: 3 advantages simulation, 3 advantages prototyping. Why need both."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "content_text": "Design, develop and implement programming code for a closed loop control system",
+    "explanation": "## Closed-Loop Implementation\n\n### Structure: SET setpoint -> LOOP: read, calculate error, control response, apply, wait\n\n### Design Decisions\n- Sampling rate (too fast = noise, too slow = poor response)\n- Control algorithm (on/off, proportional, PID)\n- Output limits (clamp to safe range)\n- Hysteresis\n- Error handling",
+    "teaching_example": "### How to teach this\n\n**Activity**: Temperature control: on/off -> hysteresis -> proportional. Graph each.\n\n**Misconception**: Sampling rate too high or low.\n\n**Quick Assessment**: Closed-loop water level control with sensor disconnect handling."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "content_text": "Apply programming code to integrate sensors, actuators and end effectors/manipulators",
+    "explanation": "## Integrating Components\n\n### Pattern: Initialise all -> LOOP: read sensors, apply logic, coordinate actuators/effectors\n\n### Challenges: Timing, priority, coordination, calibration, electrical noise\n\n### Best Practices: Abstract into functions/classes, consistent units, test individually first, logging, graceful degradation",
+    "teaching_example": "### How to teach this\n\n**Project**: Pick-and-place: ultrasonic + motor + servo gripper.\n\n**Scaffolding**: Test individually -> combine two -> all three.\n\n**Misconception**: Integrate everything at once.\n\n**Quick Assessment**: 2 sensors + 1 motor + 1 servo - integration pseudocode."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "content_text": "Implement specific control algorithms that enhance the performance of a mechatronic system",
+    "explanation": "## Advanced Control\n\n### PID Controller\n- P (Proportional): response to current error\n- I (Integral): accumulated past error (eliminates offset)\n- D (Derivative): rate of change (dampens oscillation)\n\n### Tuning: P only until oscillation -> add D -> add I\n\n### Other: Moving average filter, fuzzy logic",
+    "teaching_example": "### How to teach this\n\n**Visual**: Graph P-only, PD, PID control responses.\n\n**Activity**: PID for line-following robot. Tune parameters.\n\n**Misconception**: Complex always better. Sometimes on/off suffices.\n\n**Quick Assessment**: Effects of Kp too high, Ki too high, Kd too high."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "content_text": "Design, develop and implement a user interface (UI) to control a mechatronic system",
+    "explanation": "## Mechatronic UIs\n\n### Types: Physical (buttons/LEDs), Screen, Web-based, Mobile app\n\n### Elements: Controls (start/stop, sliders), Displays (readings, status), Feedback (visual/audio/haptic), Emergency stop\n\n### Principles: Intuitive, responsive, safe, informative, accessible",
+    "teaching_example": "### How to teach this\n\n**Activity**: Design robot controller UI. Wireframe first, then implement.\n\n**Misconception**: Aesthetics over functionality.\n\n**Quick Assessment**: Sketch greenhouse UI: controls, displays, emergency, feedback."
+  },
+  {
+    "subject": "SWE",
+    "year": "Y11",
+    "topic": "Programming mechatronics",
+    "section": "Programming and building",
+    "content_text": "Create and use unit tests to determine the effectiveness and repeatability of each component's control algorithm",
+    "explanation": "## Unit Testing in Mechatronics\n\n### What to Test: Sensor functions, motor control, conversions, control algorithms\n\n### Repeatability: Same test multiple times, consistent results expected. Identifies intermittent issues.\n\n### Benefits: Isolate problems, verify after changes, build confidence before integration, document behaviour, maintenance baselines",
+    "teaching_example": "### How to teach this\n\n**Activity**: Unit tests before integration. No integration until all pass.\n\n**Repeatability**: Run sensor test 10 times, graph, discuss consistency.\n\n**Misconception**: Skip to integrated testing. Can't identify which component fails.\n\n**Quick Assessment**: Motor function - 5 unit tests (normal, boundary, error). Run 3x for repeatability."
+  }
+]

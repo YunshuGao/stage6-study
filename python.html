@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python Practice — Stage 6 Self-Study</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* Python page specific styles */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  align-items: center;
+}
+.filter-bar label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-right: 0.25rem;
+}
+.filter-bar select {
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: 0.875rem;
+  font-family: var(--font);
+  cursor: pointer;
+}
+.filter-bar select:focus {
+  outline: none;
+  border-color: var(--swe);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+.difficulty-stars {
+  display: inline-flex;
+  gap: 2px;
+  font-size: 0.75rem;
+}
+.difficulty-stars .star { color: var(--border); }
+.difficulty-stars .star.filled { color: var(--warning); }
+
+.exercise-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all var(--transition);
+}
+.exercise-card:hover { box-shadow: var(--shadow-md); }
+.exercise-card.completed-exercise { border-left: 4px solid var(--success); }
+
+.exercise-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem 1rem;
+  cursor: pointer;
+  gap: 0.75rem;
+  transition: background var(--transition);
+}
+.exercise-card__header:hover { background: var(--bg); }
+
+.exercise-card__left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 0;
+}
+.exercise-card__checkbox {
+  width: 18px; height: 18px;
+  flex-shrink: 0;
+  accent-color: var(--success);
+  cursor: pointer;
+}
+.exercise-card__title {
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+.exercise-card__badges {
+  display: flex;
+  gap: 0.375rem;
+  flex-shrink: 0;
+}
+.exercise-card__body {
+  display: none;
+  padding: 0 1rem 1rem;
+}
+.exercise-card__body.visible { display: block; }
+
+.exercise-description {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: var(--bg);
+  border-radius: var(--radius);
+}
+
+.code-area {
+  margin-bottom: 1rem;
+}
+.code-area__label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0.375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.code-area textarea, .code-area pre {
+  width: 100%;
+  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 0.75rem;
+  tab-size: 4;
+  background: #1e1e2e;
+  color: #cdd6f4;
+}
+.code-area textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.code-area textarea:focus {
+  outline: none;
+  border-color: var(--swe);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+.code-area pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.exercise-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.hint-box {
+  display: none;
+  padding: 0.75rem;
+  background: rgba(245, 158, 11, 0.08);
+  border-left: 3px solid var(--warning);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+.hint-box.visible { display: block; }
+
+.solution-box {
+  display: none;
+  margin-bottom: 1rem;
+}
+.solution-box.visible { display: block; }
+
+.explanation-box {
+  display: none;
+  padding: 0.75rem;
+  background: rgba(59, 130, 246, 0.06);
+  border-left: 3px solid var(--learn);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+.explanation-box.visible { display: block; }
+
+.expected-output {
+  padding: 0.5rem 0.75rem;
+  background: rgba(34, 197, 94, 0.08);
+  border-left: 3px solid var(--success);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 0.8125rem;
+  font-family: monospace;
+  margin-bottom: 1rem;
+}
+
+/* Category stats */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+  padding: 1rem 0;
+}
+.category-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.category-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
+}
+.category-card.active {
+  border-color: var(--swe);
+  background: var(--swe-light);
+}
+.category-card__name {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+.category-card__stats {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.category-card__bar {
+  height: 4px;
+  background: var(--border);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+.category-card__bar-fill {
+  height: 100%;
+  background: var(--swe);
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 0;
+}
+.pagination__info {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+/* Search */
+.search-box {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: 0.875rem;
+  font-family: var(--font);
+}
+.search-box:focus {
+  outline: none;
+  border-color: var(--swe);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  .code-area textarea, .code-area pre {
+    background: #11111b;
+    border-color: var(--border);
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <div>
+      <h1 class="site-header__title">Python Practice <span>Lab</span></h1>
+      <p class="site-header__subtitle">1000+ exercises — Fundamentals to Expert Level</p>
+    </div>
+    <div style="display:flex;gap:0.75rem;align-items:center;">
+      <a href="index.html" class="btn btn--secondary">← Dashboard</a>
+      <div class="countdown" id="countdown">
+        <span class="countdown__number" id="countdownNum">--</span>
+        <span class="countdown__label">days left</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <!-- Overall Python Progress -->
+  <section class="progress-section">
+    <div class="progress-group" id="pythonProgress"></div>
+  </section>
+
+  <!-- Category Overview Grid -->
+  <div class="category-grid" id="categoryGrid"></div>
+
+  <!-- Filters -->
+  <div class="filter-bar">
+    <input type="text" class="search-box" id="searchBox" placeholder="Search exercises..." oninput="applyFilters()">
+    <div>
+      <label>Category:</label>
+      <select id="filterCategory" onchange="applyFilters()">
+        <option value="all">All Categories</option>
+      </select>
+    </div>
+    <div>
+      <label>Difficulty:</label>
+      <select id="filterDifficulty" onchange="applyFilters()">
+        <option value="all">All Levels</option>
+        <option value="1">★ Beginner</option>
+        <option value="2">★★ Elementary</option>
+        <option value="3">★★★ Intermediate</option>
+        <option value="4">★★★★ Upper Intermediate</option>
+        <option value="5">★★★★★ Advanced</option>
+        <option value="6">★★★★★★ Teacher Level</option>
+        <option value="7">★★★★★★★ Expert</option>
+      </select>
+    </div>
+    <div>
+      <label>Status:</label>
+      <select id="filterStatus" onchange="applyFilters()">
+        <option value="all">All</option>
+        <option value="incomplete">Incomplete</option>
+        <option value="completed">Completed</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Exercise Count -->
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:0.5rem 0;">
+    <span id="exerciseCount" style="font-size:0.875rem;color:var(--muted);"></span>
+    <button class="btn btn--ghost" onclick="resetQuizProgress()" style="font-size:0.8125rem;">Reset All Progress</button>
+  </div>
+
+  <!-- Exercise List -->
+  <div id="exerciseList"></div>
+
+  <!-- Pagination -->
+  <div class="pagination" id="pagination"></div>
+</div>
+
+<footer class="site-footer container">
+  <p>Progress saves automatically in your browser</p>
+  <p style="margin-top:0.25rem;">Stage 6 Self-Study Navigator — NSW NESA Enterprise Computing & Software Engineering</p>
+</footer>
+
+<script>
+// ========== STATE ==========
+var state = JSON.parse(localStorage.getItem('s6_study') || '{}');
+if (!state.completed) state.completed = {};
+if (!state.quizAnswered) state.quizAnswered = {};
+if (!state.pyCompleted) state.pyCompleted = {};
+if (!state.pyCode) state.pyCode = {};
+function saveState() { localStorage.setItem('s6_study', JSON.stringify(state)); }
+
+// ========== DATA ==========
+var exercises = [];
+var filteredExercises = [];
+var currentPage = 1;
+var perPage = 20;
+
+var CATEGORY_LABELS = {
+  fundamentals: '🔤 Fundamentals',
+  control_flow: '🔀 Control Flow',
+  functions: '⚡ Functions',
+  data_structures: '📦 Data Structures',
+  oop: '🏗️ OOP',
+  algorithms: '🧮 Algorithms',
+  file_handling: '📁 File Handling',
+  databases: '🗄️ Databases',
+  web_and_api: '🌐 Web & API',
+  data_science: '📊 Data Science',
+  automation_and_testing: '🤖 Automation & Testing',
+  security: '🔒 Security'
+};
+
+var DIFFICULTY_LABELS = {
+  1: 'Beginner', 2: 'Elementary', 3: 'Intermediate',
+  4: 'Upper Int.', 5: 'Advanced', 6: 'Teacher', 7: 'Expert'
+};
+
+// ========== COUNTDOWN ==========
+function renderCountdown() {
+  var today = new Date(); today.setHours(0,0,0,0);
+  var deadline = new Date(2026, 4, 11);
+  var diff = Math.ceil((deadline - today) / (1000*60*60*24));
+  document.getElementById('countdownNum').textContent = diff <= 0 ? 'NOW' : diff;
+  if (diff <= 14) document.getElementById('countdown').classList.add('countdown--urgent');
+}
+
+// ========== STARS ==========
+function renderStars(difficulty) {
+  var html = '<span class="difficulty-stars">';
+  for (var i = 1; i <= 7; i++) {
+    html += '<span class="star' + (i <= difficulty ? ' filled' : '') + '">★</span>';
+  }
+  html += '</span>';
+  return html;
+}
+
+// ========== CATEGORY GRID ==========
+function renderCategoryGrid() {
+  var cats = {};
+  exercises.forEach(function(ex) {
+    if (!cats[ex.category]) cats[ex.category] = { total: 0, done: 0 };
+    cats[ex.category].total++;
+    if (state.pyCompleted[ex.id]) cats[ex.category].done++;
+  });
+
+  var grid = document.getElementById('categoryGrid');
+  var html = '';
+  var catFilter = document.getElementById('filterCategory');
+  var currentVal = catFilter.value;
+  catFilter.innerHTML = '<option value="all">All Categories (' + exercises.length + ')</option>';
+
+  Object.keys(cats).sort().forEach(function(cat) {
+    var c = cats[cat];
+    var pct = c.total > 0 ? Math.round(c.done / c.total * 100) : 0;
+    var label = CATEGORY_LABELS[cat] || cat;
+
+    catFilter.innerHTML += '<option value="' + cat + '">' + label + ' (' + c.total + ')</option>';
+
+    html += '<div class="category-card' + (currentVal === cat ? ' active' : '') + '" onclick="selectCategory(\'' + cat + '\')">'
+      + '<div class="category-card__name">' + label + '</div>'
+      + '<div class="category-card__stats">' + c.done + '/' + c.total + ' completed</div>'
+      + '<div class="category-card__bar"><div class="category-card__bar-fill" style="width:' + pct + '%"></div></div>'
+      + '</div>';
+  });
+
+  grid.innerHTML = html;
+  catFilter.value = currentVal;
+}
+
+// ========== PROGRESS ==========
+function renderProgress() {
+  var total = exercises.length;
+  var done = exercises.filter(function(ex) { return state.pyCompleted[ex.id]; }).length;
+  var pct = total > 0 ? Math.round(done / total * 100) : 0;
+
+  // By difficulty
+  var byDiff = {};
+  exercises.forEach(function(ex) {
+    if (!byDiff[ex.difficulty]) byDiff[ex.difficulty] = { total: 0, done: 0 };
+    byDiff[ex.difficulty].total++;
+    if (state.pyCompleted[ex.id]) byDiff[ex.difficulty].done++;
+  });
+
+  var container = document.getElementById('pythonProgress');
+  var html = '<div class="progress-item"><span class="progress-item__label">Overall Python</span>'
+    + '<div class="progress-bar"><div class="progress-bar__fill progress-bar__fill--swe" style="width:' + pct + '%"></div></div>'
+    + '<span class="progress-item__pct">' + done + '/' + total + '</span></div>';
+
+  [1,2,3,4,5,6,7].forEach(function(d) {
+    if (byDiff[d]) {
+      var dp = Math.round(byDiff[d].done / byDiff[d].total * 100);
+      html += '<div class="progress-item"><span class="progress-item__label">' + renderStars(d) + ' ' + DIFFICULTY_LABELS[d] + '</span>'
+        + '<div class="progress-bar"><div class="progress-bar__fill progress-bar__fill--swe" style="width:' + dp + '%"></div></div>'
+        + '<span class="progress-item__pct">' + byDiff[d].done + '/' + byDiff[d].total + '</span></div>';
+    }
+  });
+
+  container.innerHTML = html;
+}
+
+// ========== FILTERS ==========
+function selectCategory(cat) {
+  document.getElementById('filterCategory').value = cat;
+  applyFilters();
+}
+
+function applyFilters() {
+  var cat = document.getElementById('filterCategory').value;
+  var diff = document.getElementById('filterDifficulty').value;
+  var status = document.getElementById('filterStatus').value;
+  var search = document.getElementById('searchBox').value.toLowerCase().trim();
+
+  filteredExercises = exercises.filter(function(ex) {
+    if (cat !== 'all' && ex.category !== cat) return false;
+    if (diff !== 'all' && ex.difficulty !== parseInt(diff)) return false;
+    if (status === 'completed' && !state.pyCompleted[ex.id]) return false;
+    if (status === 'incomplete' && state.pyCompleted[ex.id]) return false;
+    if (search && ex.title.toLowerCase().indexOf(search) === -1
+        && ex.description.toLowerCase().indexOf(search) === -1
+        && ex.category.toLowerCase().indexOf(search) === -1
+        && (ex.subcategory || '').toLowerCase().indexOf(search) === -1) return false;
+    return true;
+  });
+
+  currentPage = 1;
+  renderExerciseList();
+  renderCategoryGrid();
+  document.getElementById('exerciseCount').textContent = filteredExercises.length + ' exercises';
+}
+
+// ========== RENDER EXERCISES ==========
+function renderExerciseList() {
+  var start = (currentPage - 1) * perPage;
+  var end = Math.min(start + perPage, filteredExercises.length);
+  var pageExercises = filteredExercises.slice(start, end);
+
+  var container = document.getElementById('exerciseList');
+  var html = '';
+
+  pageExercises.forEach(function(ex, idx) {
+    var isDone = state.pyCompleted[ex.id];
+    var globalIdx = start + idx;
+    var label = CATEGORY_LABELS[ex.category] || ex.category;
+    var savedCode = state.pyCode[ex.id] || ex.starter_code || '';
+
+    html += '<div class="exercise-card' + (isDone ? ' completed-exercise' : '') + '" id="ex-' + ex.id + '">'
+      + '<div class="exercise-card__header" onclick="toggleExercise(\'' + ex.id + '\')">'
+      +   '<div class="exercise-card__left">'
+      +     '<input type="checkbox" class="exercise-card__checkbox"' + (isDone ? ' checked' : '') + ' onclick="event.stopPropagation();toggleComplete(\'' + ex.id + '\', this)">'
+      +     '<span class="exercise-card__title">' + ex.id + '. ' + escHtml(ex.title) + '</span>'
+      +   '</div>'
+      +   '<div class="exercise-card__badges">'
+      +     renderStars(ex.difficulty)
+      +     '<span class="badge badge--swe" style="margin-left:0.5rem;">' + (ex.subcategory || '').replace(/_/g, ' ') + '</span>'
+      +   '</div>'
+      + '</div>'
+      + '<div class="exercise-card__body" id="body-' + ex.id + '">'
+      +   '<div class="exercise-description">' + escHtml(ex.description) + '</div>';
+
+    // Expected output
+    if (ex.test_output) {
+      html += '<div class="expected-output"><strong>Expected Output:</strong><br>' + escHtml(ex.test_output) + '</div>';
+    }
+
+    // Code editor
+    html += '<div class="code-area">'
+      + '<div class="code-area__label">Your Code</div>'
+      + '<textarea id="code-' + ex.id + '" onchange="saveCode(\'' + ex.id + '\', this.value)">' + escHtml(savedCode) + '</textarea>'
+      + '</div>';
+
+    // Action buttons
+    html += '<div class="exercise-actions">'
+      + '<button class="btn btn--secondary" onclick="toggleHint(\'' + ex.id + '\')">💡 Hint</button>'
+      + '<button class="btn btn--secondary" onclick="toggleSolution(\'' + ex.id + '\')">👁️ Solution</button>'
+      + '<button class="btn btn--secondary" onclick="toggleExplanation(\'' + ex.id + '\')">📖 Explanation</button>'
+      + '</div>';
+
+    // Hint
+    html += '<div class="hint-box" id="hint-' + ex.id + '">'
+      + '<strong>💡 Hint:</strong> ' + escHtml(ex.hint || 'No hint available.')
+      + '</div>';
+
+    // Solution
+    html += '<div class="solution-box" id="sol-' + ex.id + '">'
+      + '<div class="code-area">'
+      + '<div class="code-area__label">Solution</div>'
+      + '<pre>' + escHtml(ex.solution || 'No solution available.') + '</pre>'
+      + '</div></div>';
+
+    // Explanation
+    html += '<div class="explanation-box" id="expl-' + ex.id + '">'
+      + escHtml(ex.explanation || 'No explanation available.')
+      + (ex.syllabus_link ? '<br><br><strong>Syllabus:</strong> ' + escHtml(ex.syllabus_link) : '')
+      + '</div>';
+
+    html += '</div></div>'; // close body + card
+  });
+
+  container.innerHTML = html;
+  renderPagination();
+}
+
+// ========== PAGINATION ==========
+function renderPagination() {
+  var totalPages = Math.ceil(filteredExercises.length / perPage);
+  var pag = document.getElementById('pagination');
+  if (totalPages <= 1) { pag.innerHTML = ''; return; }
+
+  var html = '<button class="btn btn--secondary" onclick="goPage(' + (currentPage - 1) + ')"' + (currentPage === 1 ? ' disabled' : '') + '>← Prev</button>';
+  html += '<span class="pagination__info">Page ' + currentPage + ' of ' + totalPages + '</span>';
+  html += '<button class="btn btn--secondary" onclick="goPage(' + (currentPage + 1) + ')"' + (currentPage === totalPages ? ' disabled' : '') + '>Next →</button>';
+  pag.innerHTML = html;
+}
+
+function goPage(page) {
+  var totalPages = Math.ceil(filteredExercises.length / perPage);
+  if (page < 1 || page > totalPages) return;
+  currentPage = page;
+  renderExerciseList();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ========== INTERACTIONS ==========
+function toggleExercise(id) {
+  var body = document.getElementById('body-' + id);
+  body.classList.toggle('visible');
+}
+
+function toggleComplete(id, checkbox) {
+  if (checkbox.checked) {
+    state.pyCompleted[id] = true;
+  } else {
+    delete state.pyCompleted[id];
+  }
+  saveState();
+  var card = document.getElementById('ex-' + id);
+  card.classList.toggle('completed-exercise', checkbox.checked);
+  renderProgress();
+  renderCategoryGrid();
+}
+
+function toggleHint(id) {
+  document.getElementById('hint-' + id).classList.toggle('visible');
+}
+
+function toggleSolution(id) {
+  document.getElementById('sol-' + id).classList.toggle('visible');
+}
+
+function toggleExplanation(id) {
+  document.getElementById('expl-' + id).classList.toggle('visible');
+}
+
+function saveCode(id, code) {
+  state.pyCode[id] = code;
+  saveState();
+}
+
+function resetQuizProgress() {
+  if (!confirm('Reset ALL Python exercise progress? This cannot be undone.')) return;
+  state.pyCompleted = {};
+  state.pyCode = {};
+  saveState();
+  location.reload();
+}
+
+function escHtml(s) {
+  return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// ========== TAB KEY IN TEXTAREA ==========
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Tab' && e.target.tagName === 'TEXTAREA') {
+    e.preventDefault();
+    var start = e.target.selectionStart;
+    var end = e.target.selectionEnd;
+    e.target.value = e.target.value.substring(0, start) + '    ' + e.target.value.substring(end);
+    e.target.selectionStart = e.target.selectionEnd = start + 4;
+  }
+});
+
+// ========== INIT ==========
+async function init() {
+  renderCountdown();
+
+  try {
+    var resp = await fetch('data/python_exercises.json');
+    exercises = await resp.json();
+  } catch (e) {
+    document.getElementById('exerciseList').innerHTML = '<p style="color:var(--danger);padding:2rem;text-align:center;">Failed to load exercises. Make sure data/python_exercises.json exists.</p>';
+    return;
+  }
+
+  filteredExercises = exercises.slice();
+  renderProgress();
+  renderCategoryGrid();
+  renderExerciseList();
+  document.getElementById('exerciseCount').textContent = exercises.length + ' exercises';
+}
+
+init();
+</script>
+</body>
+</html>

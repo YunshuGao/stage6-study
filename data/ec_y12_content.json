@@ -1,0 +1,576 @@
+[
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Explore the difference between quantitative and qualitative data"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Determine which data types are used to represent quantitative and qualitative data"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Explore nominal, ordinal, interval and ratio levels of measurement applied to data"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Investigate data sampling, including manual and computerised methods of active and passive data collection"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Assess the relevance, accuracy, validity and reliability of primary and secondary data"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Investigate how informatics supports the development of a deeper understanding of data"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Interpret and present data using graphs, infographics, dashboards, reports, network diagrams and maps"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Investigate structured and unstructured datasets"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Explore the use of likes, emoticons and memes as forms of alternative data as sources of feedback"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Examine the impact of errors, uncertainty and limitations in data"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Explain how blockchain technology is used to manage and verify data"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Examine software features that affect the privacy and security of data"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Explore the use of big data and data warehousing, considering volume, variety and velocity"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Explore the risks and benefits of data mining"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Analyse the impact of data scale"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Collecting, storing and analysing data",
+    "type": "content",
+    "text": "Evaluate the effectiveness of different methods for data storage"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Data quality",
+    "type": "content",
+    "text": "Investigate the ethical use of data for social or enterprise research purposes"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Data quality",
+    "type": "content",
+    "text": "Explore social, ethical and legal issues associated with using data"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Data quality",
+    "type": "content",
+    "text": "Investigate the legal issues surrounding data collection and handling"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Data quality",
+    "type": "content",
+    "text": "Investigate the influence of curated and communicated data on social behaviour"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "content",
+    "text": "Summarise data using a spreadsheet"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "content",
+    "text": "Collate information using spreadsheet analysis features, including charts, statistical analysis and what-if modelling"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "content",
+    "text": "Filter, group and sort data in a spreadsheet to process and display information"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "content",
+    "text": "Apply spreadsheet analysis features to develop a data dashboard"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "content",
+    "text": "Develop a flat-file database"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "content",
+    "text": "Apply computational thinking to design a relational database with appropriate user views"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data science",
+    "section": "Processing and presenting data",
+    "type": "content",
+    "text": "Explore how machine learning and statistical modelling are used in data analytics to analyse big data, and as a prediction tool"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "content",
+    "text": "Explain the purposes of data visualisation"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "content",
+    "text": "Describe how features of software contribute to a better understanding of datasets through data visualisation, including spreadsheets, creative design applications and combining applications to track trends and forecast"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "content",
+    "text": "Identify patterns in data by interpreting and comparing datasets for an enterprise, social or ethical issue to highlight trends and for predictive data analytics"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "content",
+    "text": "Investigate the impact of the evolution of hardware and software on the field of data analytics"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "content",
+    "text": "Describe online analytical processing (OLAP)"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "content",
+    "text": "Assess data integrity in the development of a data visualisation"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "content",
+    "text": "Explain the impact of enterprise data warehousing on data visualisation"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "content",
+    "text": "Explain how big data affects the design and development of data visualisation"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Using data to tell a story",
+    "type": "content",
+    "text": "Evaluate bias in data collection, storage and analysis when developing visualisations"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Interpreting data visualisations",
+    "type": "content",
+    "text": "Evaluate the effectiveness of software tools used to develop data visualisations"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Interpreting data visualisations",
+    "type": "content",
+    "text": "Interrogate data from a data visualisation"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Designing for user experience",
+    "type": "content",
+    "text": "Use graphic design tools to assist in the graphic development of a data visualisation"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Designing for user experience",
+    "type": "content",
+    "text": "Explain how user experience (UX) influences the development of effective data visualisations"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Designing for user experience",
+    "type": "content",
+    "text": "Develop and implement criteria for evaluating the effectiveness of user experiences"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Designing for user experience",
+    "type": "content",
+    "text": "Investigate the impact of emerging hardware and software technologies on user interface (UI) and UX design and development"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Creating data visualisations",
+    "type": "content",
+    "text": "Research, source, organise and store data appropriate for a data visualisation"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Creating data visualisations",
+    "type": "content",
+    "text": "Design and develop a data visualisation for a specific scenario to represent trends, patterns and relationships, and illustrate predictive analysis incorporating big data"
+  },
+  {
+    "year": "Y12",
+    "topic": "Data visualisation",
+    "section": "Creating data visualisations",
+    "type": "content",
+    "text": "Investigate and implement methods to maintain data security"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Investigate applications of decision support systems"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Describe categories of decision-making within decision support systems"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Investigate common applications of expert systems"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Describe key features of an expert system"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Research factors that have allowed expert systems to advance from rule-based systems to integrate probability"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Describe how people’s changing needs have shaped the proliferation of expert systems"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Describe the operation of simplistic and complex intelligent agents used by search engines, including predictive search strings and the use of voice assistants to initiate interaction"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Compare techniques used by different inference engines"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Investigate the hardware used in an intelligent system"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Explore how computational thinking can be integrated into the design and development of an intelligent system"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Communicate the logical processes performed by an intelligent system by using flowcharts, data flow diagrams and infographics"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Investigate the disruptive effects of intelligent systems"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Investigate social and ethical issues to be considered when developing, implementing and using intelligent systems"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Investigate current and emerging technologies associated with intelligent systems, including AI"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Systems and their applications",
+    "type": "content",
+    "text": "Explain how intelligent systems combine innovative techniques and technologies to meet the needs of enterprise"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "content",
+    "text": "Investigate the infrastructure requirements for an intelligent network in an enterprise with devices linked through an Internet of Things (IoT)"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "content",
+    "text": "Explore collection, type, storage, processing, application and transmission of relevant and surplus data in an intelligent IoT network"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "content",
+    "text": "Investigate the application of simulation, data modelling and the automation of systems in a range of enterprises"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "content",
+    "text": "Explain the role of intelligent systems in surveillance"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Data and intelligent systems",
+    "type": "content",
+    "text": "Explain how AI supports efficiency in an IoT network"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "content",
+    "text": "Develop a set of rules and facts that could be used within an expert system to draw conclusions"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "content",
+    "text": "Apply certainty factors to construct a decision tree for a proposed expert system"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "content",
+    "text": "Verify the sources of data used in a decision support system"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "content",
+    "text": "Use a flowchart to develop a knowledge base of IF-THEN rules to be used by an expert system"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "content",
+    "text": "Design and model an automated smart system using a range of inputs and outputs"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "content",
+    "text": "Implement automated processing using software"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "content",
+    "text": "Assess the output produced by a decision support system, including graphing to detail the success of decisions, and comparing the proposed versus the actual outputs"
+  },
+  {
+    "year": "Y12",
+    "topic": "Intelligent systems",
+    "section": "Creating intelligent systems",
+    "type": "content",
+    "text": "Explain how expert systems contribute to the efficiency of intelligent systems"
+  },
+  {
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Identifying and defining",
+    "type": "content",
+    "text": "Describe the tools and processes used to manage and document the development of an enterprise system"
+  },
+  {
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Identifying and defining",
+    "type": "content",
+    "text": "Explain the effect of the changing nature of enterprise on the development of projects"
+  },
+  {
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Researching and planning",
+    "type": "content",
+    "text": "Investigate tools that support the design and development of an enterprise system"
+  },
+  {
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Researching and planning",
+    "type": "content",
+    "text": "Describe how computational, design and systems thinking skills are used in the design and development of an enterprise system"
+  },
+  {
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Researching and planning",
+    "type": "content",
+    "text": "Select key collaborating and managing criteria appropriate to the development of an enterprise project"
+  },
+  {
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Producing and implementing",
+    "type": "content",
+    "text": "Apply tools to inform the requirements and limitations of an enterprise system"
+  },
+  {
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Producing and implementing",
+    "type": "content",
+    "text": "Explore and apply the most suitable development approach to develop, modify and implement an enterprise system"
+  },
+  {
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Producing and implementing",
+    "type": "content",
+    "text": "Develop an implementation plan and test its feasibility for an enterprise computing system"
+  },
+  {
+    "year": "Y12",
+    "topic": "Enterprise project",
+    "section": "Testing and evaluating",
+    "type": "content",
+    "text": "Verify and validate an enterprise computing system"
+  }
+]
